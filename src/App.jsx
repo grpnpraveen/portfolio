@@ -1,6 +1,6 @@
 import './App.css'
 import Face from './assets/face_icon.png'
-import Memoji from './Memoji'
+// import Memoji from './Memoji'
 
 function App() {
 
