@@ -1,6 +1,6 @@
 import './App.css'
 import Face from './assets/face_icon.png'
-// import Memoji from './Memoji'
+import Memoji from './Memoji'
 
 function App() {
 
@@ -11,7 +11,8 @@ function App() {
       <div className="flex flex-col rounded-[15px] bg-white/10 px-3 text-sm font-medium text-zinc-800 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur dark:bg-zinc-800/90 dark:text-zinc-200 dark:ring-white/10 h-[550px] w-[300px]">
 
         <div className="flex flex-row self-center items-center rounded-[20px] bg-gradient-to-r from-[#374151] to-[#111827] mt-5 size-36">
-          <img src={Face} className="justify-center item-center size-30"/>
+          {/* <img src={Face} className="justify-center item-center size-30"/> */}
+          <Memoji/>
         </div>
 
         <h2 className=" font-semibold from-neutral-50 text-2xl mt-4">Ravi Praveen Gali</h2>
@@ -68,7 +69,7 @@ function App() {
       </div>
 
 
-      {/* <Memoji/> */}
+     
       {/* <ul className="flex rounded-full bg-white/90 px-3 text-sm font-medium text-zinc-800 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur dark:bg-zinc-800/90 dark:text-zinc-200 dark:ring-white/10">
       
       <a className="relative block px-3 py-2 transition text-teal-500 dark:text-teal-400" href="/about">About<span class="absolute inset-x-1 -bottom-px h-px bg-gradient-to-r from-teal-500/0 via-teal-500/40 to-teal-500/0 dark:from-teal-400/0 dark:via-teal-400/40 dark:to-teal-400/0"></span></a>
