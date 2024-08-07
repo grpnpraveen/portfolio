@@ -2,22 +2,23 @@ import './App.css';
 import * as THREE from 'three';
 import { useRef, useState, useEffect } from 'react';
 import { Canvas, useFrame } from '@react-three/fiber';
-import { useGLTF } from '@react-three/drei';
+import { useGLTF, Stats } from '@react-three/drei';
 import { easing } from 'maath';
 
 function Suzanne(props ) {
   const mesh = useRef();
-  const { nodes } = useGLTF('monkey_head.glb'); // Ensure the path is correct
+  const { nodes } = useGLTF('head_model.glb'); // Ensure the path is correct
   const [dummy] = useState(() => new THREE.Object3D());
 
   useFrame((state, dt) => {
-    dummy.lookAt(props.pointer.x * 2, props.pointer.y * 2, 1); // Adjusted lookAt to account for perspective
+    dummy.lookAt(props.pointer.x * 0.7 , props.pointer.y * 0.7, 1); // Adjusted lookAt to account for perspective
     easing.dampQ(mesh.current.quaternion, dummy.quaternion, 0.15, dt);
   });
 
   return (
-    <mesh ref={mesh} geometry={nodes.Suzanne.geometry} {...props}>
-      <meshNormalMaterial />
+    <mesh ref={mesh} geometry={nodes.head.geometry} {...props} receiveShadow>
+      {/* <meshNormalMaterial /> */}
+      <meshStandardMaterial />
     </mesh>
   );
 }
@@ -43,10 +44,16 @@ function Memoji() {
    }, []);
 
   return (
-    <Canvas  camera={{ position: [0, 0.1, 3] }}>
+    <Canvas  camera={{ position: [0,0,4.5], fov: 50} } shadows >
       <ambientLight />
-      <directionalLight position={[10, 10, 10]} />
-      <Suzanne pointer={pointer}/>
+      <directionalLight
+        position={[10,10,10]}
+        castShadow
+        intensity={Math.PI * 0.8}
+        
+      />
+      <Suzanne pointer={pointer} />
+      <Stats />
     </Canvas>
   );
 }
