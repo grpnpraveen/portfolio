@@ -2,23 +2,39 @@ import './App.css';
 import * as THREE from 'three';
 import { useRef, useState, useEffect } from 'react';
 import { Canvas, useFrame } from '@react-three/fiber';
-import { useGLTF, Stats } from '@react-three/drei';
+import { useGLTF, Stats, useTexture, Environment } from '@react-three/drei';
 import { easing } from 'maath';
 
 function Suzanne(props ) {
   const mesh = useRef();
-  const { nodes } = useGLTF('head_model.glb'); // Ensure the path is correct
+  const { nodes, materials  } = useGLTF('head_model.glb '); // Ensure the path is correct
   const [dummy] = useState(() => new THREE.Object3D());
 
   useFrame((state, dt) => {
-    dummy.lookAt(props.pointer.x * 0.7 , props.pointer.y * 0.7, 1); // Adjusted lookAt to account for perspective
+    dummy.lookAt(props.pointer.x * 0.7 , props.pointer.y * 0.7, 1); 
     easing.dampQ(mesh.current.quaternion, dummy.quaternion, 0.15, dt);
   });
-
+  const texture = useTexture('baking.png')
   return (
-    <mesh ref={mesh} geometry={nodes.head.geometry} {...props} receiveShadow>
-      {/* <meshNormalMaterial /> */}
-      <meshStandardMaterial />
+    <mesh ref={mesh}
+      castShadow
+      receiveShadow
+      geometry={nodes.head.geometry} {...props} 
+      material={materials['baked#']}
+
+    >
+
+      <meshStandardMaterial  
+      {...materials['baked#']}
+      material = {materials['baked#']}
+      emissiveMap={texture}
+      emissiveIntensity={1} // Adjust the emission intensity
+      emissive={3} 
+      roughness={0.5} 
+      bumpScale={1} 
+      normalScale={1} 
+      displacementScale={1}/>
+
     </mesh>
   );
 }
@@ -45,6 +61,7 @@ function Memoji() {
 
   return (
     <Canvas  camera={{ position: [0,0,4.5], fov: 50} } shadows >
+      <Environment> </Environment>
       <ambientLight />
       <directionalLight
         position={[10,10,10]}
@@ -57,5 +74,5 @@ function Memoji() {
     </Canvas>
   );
 }
-
+useGLTF.preload('head_model.glb')
 export default Memoji;
