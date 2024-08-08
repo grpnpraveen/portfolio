@@ -1,8 +1,8 @@
 import './App.css';
 import * as THREE from 'three';
-import { useRef, useState, useEffect } from 'react';
+import { useRef, useState, useEffect, Suspense } from 'react';
 import { Canvas, useFrame } from '@react-three/fiber';
-import { useGLTF, Stats, useTexture, Environment } from '@react-three/drei';
+import { useGLTF, Stats, useTexture, Environment, Stage, EnvironmentMap } from '@react-three/drei';
 import { easing } from 'maath';
 
 function Suzanne(props ) {
@@ -14,25 +14,22 @@ function Suzanne(props ) {
     dummy.lookAt(props.pointer.x * 0.7 , props.pointer.y * 0.7, 1); 
     easing.dampQ(mesh.current.quaternion, dummy.quaternion, 0.15, dt);
   });
-  const texture = useTexture('baking.png')
+  // const texture = useTexture('baking.png')
   return (
     <mesh ref={mesh}
       castShadow
       receiveShadow
       geometry={nodes.head.geometry} {...props} 
       material={materials['baked#']}
-
     >
-
       <meshStandardMaterial  
       {...materials['baked#']}
       material = {materials['baked#']}
-      emissiveMap={texture}
-      emissiveIntensity={1} // Adjust the emission intensity
-      emissive={3} 
+      envMapIntensity={0.8}
       roughness={0.5} 
       bumpScale={1} 
       normalScale={1} 
+      shadows
       displacementScale={1}/>
 
     </mesh>
@@ -60,15 +57,24 @@ function Memoji() {
    }, []);
 
   return (
-    <Canvas  camera={{ position: [0,0,4.5], fov: 50} } shadows >
+    <Canvas gl={{ preserveDrawingBuffer: true }} shadows dpr={[1, 1.5]} camera={{ position: [0,0,3.6], fov: 50} } >
       <Environment> </Environment>
-      <ambientLight />
-      <directionalLight
+      <ambientLight  intensity={0.25}/>
+      {/* <directionalLight
         position={[10,10,10]}
         castShadow
-        intensity={Math.PI * 0.8}
+        intensity={Math.PI * 1.3}
         
-      />
+      /> */}
+      {/* <Environment preset='warehouse' emissive={0.01}></Environment> */}
+      <Suspense fallback={null}>
+      <Stage
+      shadows
+      adjustCamera
+      >
+
+      </Stage>
+      </Suspense>
       <Suzanne pointer={pointer} />
       <Stats />
     </Canvas>
