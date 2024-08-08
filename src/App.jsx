@@ -8,9 +8,9 @@ function App() {
   return (
     <>
 
-      <div className="flex flex-col rounded-[15px] bg-white/10 px-3 text-sm font-medium text-zinc-800 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur dark:bg-zinc-800/90 dark:text-zinc-200 dark:ring-white/10 h-[550px] w-[300px]">
+      <div className="p_centerPart flex flex-col rounded-[15px] bg-white/10 px-3 text-sm font-medium text-zinc-800 shadow-lg shadow-zinc-100/5 ring-1 ring-zinc-900/5 backdrop-blur dark:bg-zinc-800/90 dark:text-zinc-200 dark:ring-white/10 h-[550px] w-[300px]">
 
-        <div className="flex flex-row self-center items-center rounded-[20px] bg-gradient-to-r from-[#374151] to-[#111827] mt-5 size-36">
+        <div className="flex flex-row self-center items-center rounded-[20px] bg-gradient-to-r from-[#374151] to-[#111827] mt-5 size-36 shadow-xl hover:shadow-sm">
           {/* <img src={Face} className="justify-center item-center size-30"/> */}
           <Memoji/>
         </div>
@@ -30,6 +30,7 @@ function App() {
               <path d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
               </svg>
           </div>
+
           <div className="flex flex-col ms-5">
             <div className="text-start text-gray-400">EMAIL</div>
             <div className="">grpnpraveen@gmail.com</div>
@@ -61,19 +62,15 @@ function App() {
           <div className="flex flex-col ms-5">
             <div className="text-start text-gray-400">LOCATION</div>
             <div className="">Stony Brook, New York, USA</div>
-          </div>
+          </div>   
+          <span className="absolute inset-x-1 -bottom-px h-px bg-gradient-to-r from-teal-500/0 via-teal-500/40 to-teal-500/0 dark:from-teal-400/0 dark:via-teal-400/40 dark:to-teal-400/0"></span>
         </div>
 
 
 
       </div>
 
-
-     
-      {/* <ul className="flex rounded-full bg-white/90 px-3 text-sm font-medium text-zinc-800 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur dark:bg-zinc-800/90 dark:text-zinc-200 dark:ring-white/10">
-      
-      <a className="relative block px-3 py-2 transition text-teal-500 dark:text-teal-400" href="/about">About<span class="absolute inset-x-1 -bottom-px h-px bg-gradient-to-r from-teal-500/0 via-teal-500/40 to-teal-500/0 dark:from-teal-400/0 dark:via-teal-400/40 dark:to-teal-400/0"></span></a>
-      </ul> */}
+ 
     </>
   )
 }

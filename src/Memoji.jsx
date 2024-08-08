@@ -2,16 +2,16 @@ import './App.css';
 import * as THREE from 'three';
 import { useRef, useState, useEffect, Suspense } from 'react';
 import { Canvas, useFrame } from '@react-three/fiber';
-import { useGLTF, Stats, useTexture, Environment, Stage, EnvironmentMap } from '@react-three/drei';
+import { useGLTF, Stats, useTexture, Stage } from '@react-three/drei';
 import { easing } from 'maath';
 
-function Suzanne(props ) {
+function Prophead(props ) {
   const mesh = useRef();
   const { nodes, materials  } = useGLTF('head_model.glb '); // Ensure the path is correct
   const [dummy] = useState(() => new THREE.Object3D());
 
   useFrame((state, dt) => {
-    dummy.lookAt(props.pointer.x * 0.7 , props.pointer.y * 0.7, 1); 
+    dummy.lookAt(props.pointer.x * 2 , props.pointer.y * 0.8, 1); 
     easing.dampQ(mesh.current.quaternion, dummy.quaternion, 0.15, dt);
   });
   // const texture = useTexture('baking.png')
@@ -21,6 +21,7 @@ function Suzanne(props ) {
       receiveShadow
       geometry={nodes.head.geometry} {...props} 
       material={materials['baked#']}
+      position={[0,-0.2,0]}
     >
       <meshStandardMaterial  
       {...materials['baked#']}
@@ -57,25 +58,30 @@ function Memoji() {
    }, []);
 
   return (
-    <Canvas gl={{ preserveDrawingBuffer: true }} shadows dpr={[1, 1.5]} camera={{ position: [0,0,3.6], fov: 50} } >
-      <Environment> </Environment>
-      <ambientLight  intensity={0.25}/>
-      {/* <directionalLight
-        position={[10,10,10]}
-        castShadow
-        intensity={Math.PI * 1.3}
-        
-      /> */}
-      {/* <Environment preset='warehouse' emissive={0.01}></Environment> */}
-      <Suspense fallback={null}>
-      <Stage
-      shadows
-      adjustCamera
-      >
+    <Canvas gl={{antialias:true,  preserveDrawingBuffer: true }} shadows dpr={[1, 1.5]} camera={{ position: [0,0,10.5], fov: 20} } >
+      <ambientLight  intensity={0.35}/>
 
-      </Stage>
+       <directionalLight
+        position={[10,10,10]}
+        // position={[1,1,0]}
+        castShadow
+        // color={[1,1,0]}
+        intensity={Math.PI * 0.5}
+      />
+
+      <Suspense fallback={null} shadows contactShadow preset={'rembrandt'} environment={'city'}>
+        <Stage
+        shadows
+        adjustCamera ={false}
+        contactShadow
+        preset={'rembrandt'}
+        environment={'city'}>
+
+        <Prophead pointer={pointer} />
+        </Stage>
       </Suspense>
-      <Suzanne pointer={pointer} />
+
+
       <Stats />
     </Canvas>
   );
