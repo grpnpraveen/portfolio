@@ -23,6 +23,10 @@ body {
   place-items: center;
   min-width: 100vb;
   min-height: 100vh;
+  /* background-image:url('bg2.png'); */
+  background-repeat:no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
 }
 
 @media (prefers-color-scheme: light) {
