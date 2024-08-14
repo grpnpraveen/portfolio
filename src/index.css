@@ -21,7 +21,7 @@ body {
   margin: 0;
   display: flex;
   place-items: center;
-  min-width: 100vb;
+  /* min-width: 100vb; */
   min-height: 100vh;
   /* background-image:url('bg2.png'); */
   background-repeat:no-repeat;

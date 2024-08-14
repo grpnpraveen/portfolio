@@ -4,6 +4,16 @@ import Memoji from './components/Memoji'
 import Infocard from './components/Infocard'
 import Media from './components/Media'
 
+function Tooltip({ text, children }) {
+  return (
+    <div className="relative group">
+    {children}
+    <div className="absolute left-full ml-2 top-1/2 -translate-y-1/2 hidden w-max max-w-xs px-3 py-2 bg-gray-700 text-green-400 text-sm rounded-md group-hover:block">
+      {text}
+    </div>
+  </div>
+  );
+}
 
 function App() {
 
@@ -66,12 +76,17 @@ function App() {
           </svg>
         </Media>
 
-        <Media href='mailto:grpnpraveen@gmail.com'>
-          <img draggable="false"  src='./hire_me.png'></img>
-        </Media>
+        <Tooltip text="hire me !">
+          <Media href='mailto:grpnpraveen@gmail.com'>
+            <img draggable="false"  src='./hire_me.png'></img>
+          </Media>
+       </Tooltip>
+      
 
       </div>
 
+
+  
   </div>
 
 
