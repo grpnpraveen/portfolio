@@ -38,7 +38,9 @@ function Prophead(props) {
 }
 
 function Memoji() {
+
   const [pointer, setPointer] = useState({ x: 0, y: 0 });
+  
   useEffect(() => {
     const handleMouseMove = (event) => {
       // Update pointer position state with the mouse coordinates
