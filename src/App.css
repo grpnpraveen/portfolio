@@ -23,7 +23,7 @@
     transform: translateY(0) rotateX(0deg) rotateY(0deg);
   }
   50% {
-    transform: translateY(-20px) rotateX(10deg) rotateY(10deg);
+    transform: translateY(-50px) rotateX(10deg) rotateY(10deg);
   }
   100% {
     transform: translateY(0) rotateX(0deg) rotateY(0deg);
@@ -31,16 +31,41 @@
 }
 
 .bubble {
-  animation: float 3s ease-in-out infinite;
+  animation: float 5s ease-in-out infinite;
   cursor: pointer;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 3px 3px 10px rgba(135, 133, 133, 0.31);
+  transform-style: preserve-3d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bubble2 {
+  animation: float 2s ease-out infinite;
+  cursor: pointer;
+  box-shadow: 5px 6px 10px rgba(255, 0, 0, 0.2);
   transform-style: preserve-3d;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-text{
-  color: black;
+.text_custom{
+  color: white;
+  background-color: rgba(0, 0, 0, 0.4);;
+  letter-spacing: 0.2ch;
   font-style: italic;
+  transition: 0.5s ease-in-out;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+  
+  backdrop-filter: blur( 20px );
+  -webkit-backdrop-filter: blur( 20px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
+.text_custom:hover
+{
+  color: black;
+
+}
+
