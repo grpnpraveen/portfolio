@@ -9,12 +9,12 @@
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
   background: radial-gradient(circle, rgb(124, 124, 124) 0%, rgb(0, 0, 0) 100%);
-  background-repeat:no-repeat;
+  background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
   font-synthesis: none;
-  min-width: 100dvw;
-  min-height: 100dvh;
+  min-width: 100vw;
+  min-height: 100vh;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -24,13 +24,32 @@ body {
   margin: 0;
   display: flex;
   place-items: center;
-  min-width: 100dvw;
-  min-height: 100dvh;
-  /* background-image:url('bg2.jpg'); */
-  /* background-image:url('hire_me.png'); */
-  /* background: radial-gradient(circle, rgb(124, 124, 124) 0%, rgb(0, 0, 0) 100%); */
-  /* background-repeat:no-repeat;
-  background-attachment: fixed;
-  background-size: cover; */
+  min-width: 100vw;
+  min-height: 100vh;
 }
 
+@media (max-width: 1200px) {
+  :root {
+    font-size: 18px; /* Adjust the base font size for smaller screens */
+  }
+}
+
+@media (max-width: 768px) {
+  :root {
+    font-size: 16px; /* Further adjust font size for tablets */
+  }
+  body {
+    flex-direction: column; /* Stack items vertically on smaller screens */
+    padding: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  :root {
+    font-size: 14px; /* Further adjust font size for mobile devices */
+    background-size: cover; /* Ensure background scales properly on mobile */
+  }
+  body {
+    padding: 10px;
+  }
+}
