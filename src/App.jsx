@@ -6,7 +6,7 @@ import Centerstage from './components/Centerstage'
 
 function App() {
 
-    const [show_image, set_show_image] = useState(false)
+    const [show_image, set_show_image] = useState(true)
     useEffect(()=>{
       setTimeout(()=>{
         set_show_image(false)
@@ -19,8 +19,10 @@ function App() {
       <div>
         { show_image ? (
           <>
+          <div className="absolute invisible">
+             <Centerstage  />
+          </div>
           <img src={Loadingsvg}></img>
-          <Centerstage show='hidden' />
           </>
         ) : (
           <>

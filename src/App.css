@@ -62,7 +62,6 @@
   --translateY-start:0;
 }
 
-
 .bubble3{
   animation: float 5s ease-out infinite;
   --translateY-start:10;
@@ -71,8 +70,6 @@
   animation: float 5s ease-out infinite;
   --translateY-start:-40;
 }
-
-
 
 .text_custom{
   color: white;
