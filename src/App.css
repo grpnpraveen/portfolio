@@ -55,7 +55,7 @@
   letter-spacing: 0.2ch;
   font-style: italic;
   transition: 0.5s ease-in-out;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-family: Cambria;
 
   
   backdrop-filter: blur( 20px );
