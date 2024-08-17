@@ -28,10 +28,10 @@ function Centerstage(props)
     return (
             <>
             <div className='flex flex-col'>
-              <div className="bubble size-28 rounded-full text_custom hover:bg-orange-400/65 text_custom">
+              <div className="bubble bubble3 size-28 rounded-full text_custom hover:bg-orange-400/65 text_custom">
                 <text>&lt;WhoamI/&gt;</text>
               </div>
-              <div className="bubble size-36 mt-44 hover:bg-yellow-400/65 rounded-full text_custom">
+              <div className="bubble bubble5 size-36 mt-44 hover:bg-yellow-400/65 rounded-full text_custom">
               <text>&lt;Experience/&gt;</text>
               </div>
             </div>
@@ -45,7 +45,7 @@ function Centerstage(props)
               </div>
             </div>
       
-        <div id='center_stage' className={`'p_centerPart flex flex-col rounded-[15px] bg-white/10 px-3 text-sm font-medium text-zinc-800 shadow-lg shadow-zinc-100/5 ring-1 ring-zinc-900/5 backdrop-blur dark:bg-zinc-800/90 dark:text-zinc-200 dark:ring-white/10 w-[450px]' ${props.show}`}>
+        <div id='center_stage' className={`'p_centerPart flex flex-col rounded-[15px] bg-zinc-800/10 px-3 text-sm font-medium text-zinc-200 shadow-lg shadow-zinc-100/5 ring-1 ring-zinc-900/5 backdrop-blur dark:bg-zinc-800/90 dark:text-zinc-200 dark:ring-white/10 w-[450px]' ${props.show}`}>
         {/* h-[550px] */}
           <div className="flex flex-row self-center items-center rounded-[20px] bg-gradient-to-r from-[#374151] to-[#111827] mt-5 size-36 shadow-xl hover:shadow-sm">
             {/* <img src={Face} className="justify-center item-center size-30"/> */}
@@ -117,7 +117,7 @@ function Centerstage(props)
               <div className="bubble size-20 mt-36 hover:bg-blue-300/65 rounded-full text_custom">
                 <text>&lt;ECA/&gt;</text>
               </div>
-              <div className="bubble size-36 mt-44 hover:bg-orange-400/65 rounded-full text_custom">
+              <div className="bubble bubble3 size-36 mt-44 hover:bg-orange-400/65 rounded-full text_custom">
               <text>&lt;Education/&gt;</text>
               </div>
             </div>
