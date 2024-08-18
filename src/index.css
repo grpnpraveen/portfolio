@@ -10,6 +10,7 @@
   color: rgba(255, 255, 255, 0.87);
   background: radial-gradient(circle, rgb(124, 124, 124) 0%, rgb(0, 0, 0) 100%);
   background-repeat: no-repeat;
+  background-attachment: fixed;
   background-size: cover;
   font-synthesis: none; 
   min-width: 100vw;

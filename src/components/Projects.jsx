@@ -5,7 +5,8 @@ function Projects()
  
     return(
       <>
-      <Transition color_to='purple' heading='Projects'>
+           <Transition text_color_to='text-purple-500' bg_color_to='bg-purple-500' heading='Projects' >
+
 
 
 

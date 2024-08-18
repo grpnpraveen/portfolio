@@ -5,13 +5,9 @@ function About()
  
     return(
       <>
-      <Transition color_to='orange' heading='About'>
+      <Transition text_color_to='text-orange-500' bg_color_to='bg-orange-500' heading='About' >
 
 
-
-
-
-      
       </Transition>
       </>
     );

@@ -1,11 +1,11 @@
 import { motion } from "framer-motion";
 import Navbar from "./Navbar";
 import PropTypes from 'prop-types';
-
-
+import '../App.css'
 
 Transition.propTypes = {
-    color_to: PropTypes.string.isRequired,
+    text_color_to: PropTypes.string.isRequired,
+    bg_color_to: PropTypes.string.isRequired,
     heading: PropTypes.string.isRequired,
     children: PropTypes.any
   }
@@ -13,13 +13,11 @@ Transition.propTypes = {
 
 
 
-function Transition({color_to , heading, children})
+function Transition({text_color_to , heading, children, bg_color_to})
 {
-  const color_s = color_to;
+
    return(
         <div className="App">
-
-        
           <motion.div className="flex flex-col space-x-6"
             initial={{ scaleY: 0 }}
             animate={{ scaleY: 1 }}
@@ -38,14 +36,14 @@ function Transition({color_to , heading, children})
                        
             {/* CENTER */}
             <div className="m-8">
-            <Navbar home_color={`text-${color_s}-500`}/>
+            <Navbar home_color={text_color_to}/>
             </div>
  
             <div className="flex flex-col mt-9 ml-5 pl-14">
                 <text className="text-7xl text-[#47280b] self-start">{heading} .</text> 
 
                 <motion.div
-                  className={`w-16 h-1 bg-${color_s}-500 mt-4 rounded`}
+                  className={`w-16 h-1 mt-4 rounded ${bg_color_to}`}
                   initial={{ x: '-200%' }}
                   animate={{ x: '0%' }}
                   exit={{ x: '100%' }}
@@ -60,17 +58,8 @@ function Transition({color_to , heading, children})
 
 
              </div>
-
-     
-          
             
-           
                   {children}
-
-
-
-
-
 
         </motion.div>
         </div>

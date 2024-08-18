@@ -5,7 +5,8 @@ function Eca()
  
     return(
       <>
-      <Transition color_to='sky' heading='Eca'>
+           <Transition text_color_to='text-sky-500' bg_color_to='bg-sky-500' heading='Eca' >
+
 
 
         

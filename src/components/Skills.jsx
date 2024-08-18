@@ -5,7 +5,8 @@ function Skills()
  
     return(
       <>
-      <Transition color_to='teal' heading='Skills'>
+           <Transition text_color_to='text-teal-500' bg_color_to='bg-teal-500' heading='Skills' >
+
 
 
 
