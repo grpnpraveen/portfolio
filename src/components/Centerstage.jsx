@@ -59,7 +59,7 @@ function Centerstage(props)
               </Link>
             </div>
       
-        <div id='center_stage' className={`'p_centerPart flex flex-col rounded-[15px] bg-zinc-800/10 px-3 text-sm font-medium text-zinc-200 shadow-lg shadow-zinc-100/5 ring-1 ring-zinc-900/5 backdrop-blur dark:bg-zinc-800/90 dark:text-zinc-200 dark:ring-white/10 w-[450px]' ${props.show}`}>
+        <div id='center_stage' className={`p_centerPart flex flex-col rounded-[15px] bg-zinc-800/10 px-3 text-sm font-medium text-zinc-200 shadow-lg shadow-zinc-100/5 ring-1 ring-zinc-900/5 backdrop-blur dark:bg-zinc-800/90 dark:text-zinc-200 dark:ring-white/10 $w-[350px] {props.show}`}>
         {/* h-[550px] */}
           <div className="flex flex-row self-center items-center rounded-[20px] bg-gradient-to-r from-[#374151] to-[#111827] mt-5 size-36 shadow-xl hover:shadow-sm">
             {/* <img src={Face} className="justify-center item-center size-30"/> */}
@@ -88,7 +88,7 @@ function Centerstage(props)
             </svg>
           </Infocard>
 
-          <Infocard title='LOCATION' info='Stony Brook, New York, USA' href='https://maps.app.goo.gl/mz2cDRsUV8bsft9M7'>
+          <Infocard title='LOCATION' info='Stony Brook, New York' href='https://maps.app.goo.gl/mz2cDRsUV8bsft9M7'>
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"  stroke="currentColor" className="size-7 items-center justify-center">
               <path d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
               <path d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" />

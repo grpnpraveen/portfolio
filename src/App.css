@@ -9,6 +9,45 @@
   padding: 2rem;
   text-align: center;
 }
+.nav {
+  position: fixed;
+  width: 100%;
+  display: flex;
+  justify-content : space-between
+}
+
+.nav—links {
+  display: flex;
+}
+
+.logo, .nav-item{
+  /* margin: 2em; */
+  font-weight: 400;
+  font-size: 1.5em;
+}
+
+
+.wavy {
+  animation-name: wavy;
+  animation-duration: 1.3s;
+  animation-timing-function: ease;
+  animation-iteration-count: 2;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+@keyframes wavy {
+  0% {
+    top: 0px;
+  }
+  50% {
+    top: -15px;
+  }
+  100% {
+    top: 0px;
+  }
+}
 
 .p_centerPart{
   background: rgba( 255, 255, 255, 0.25 );
@@ -18,17 +57,7 @@
   border-radius: 10px;
   border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
-/* @keyframes float {
-  0% {
-    transform: translateY(0) rotateX(0deg) rotateY(0deg);
-  }
-  50% {
-    transform: translateY(-50px) rotateX(10deg) rotateY(10deg);
-  }
-  100% {
-    transform: translateY(0) rotateX(0deg) rotateY(0deg);
-  }
-} */
+
 
 @keyframes float {
   0% {

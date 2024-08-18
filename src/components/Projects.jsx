@@ -1,11 +1,11 @@
 import Transition from "./Transition";
 
-function About()
+function Projects()
 {
  
     return(
       <>
-      <Transition color_to='orange' heading='About'>
+      <Transition color_to='purple' heading='Projects'>
 
 
 
@@ -20,4 +20,4 @@ function About()
 
 
 
-export default About;
+export default Projects;

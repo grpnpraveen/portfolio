@@ -5,7 +5,11 @@ import { useEffect, useState } from 'react'
 import { Route, Routes, useLocation } from 'react-router-dom'
 import Home from './components/Home'
 import About from './components/About'
-import { AnimatePresence } from 'framer-motion';
+import Projects from './components/Projects'
+import Experience from './components/Experience'
+import Skills from './components/Skills'
+import Eca from './components/Eca'
+// import { AnimatePresence } from 'framer-motion';
 
 
 function App() {
@@ -29,17 +33,17 @@ function App() {
           </>
         ) : (
           <>
-          <AnimatePresence>
-
-
-
-           
+          {/* <AnimatePresence> */}
 
           <Routes location={location} key={location.pathname}>
-            <Route index path="/portfolio" element={<Home/>}/>
+            <Route index path="/portfolio/" element={<Home/>}/>
             <Route path="/portfolio/about" element={<About/>}/>
+            <Route path="/portfolio/projects" element={<Projects/>}/>
+            <Route path="/portfolio/experience" element={<Experience/>}/>
+            <Route path="/portfolio/skills" element={<Skills/>}/>
+            <Route path="/portfolio/eca" element={<Eca/>}/>
           </Routes>
-          </AnimatePresence>
+          {/* </AnimatePresence> */}
            
 
 

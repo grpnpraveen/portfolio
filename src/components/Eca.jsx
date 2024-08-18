@@ -1,16 +1,14 @@
 import Transition from "./Transition";
 
-function About()
+function Eca()
 {
  
     return(
       <>
-      <Transition color_to='orange' heading='About'>
+      <Transition color_to='sky' heading='Eca'>
 
 
-
-
-
+        
       
       </Transition>
       </>
@@ -20,4 +18,4 @@ function About()
 
 
 
-export default About;
+export default Eca;

@@ -7,7 +7,7 @@ import { easing } from 'maath';
 
 function Prophead(props) {
   const mesh = useRef();
-  const { nodes, materials  } = useGLTF('head_model.glb '); // Ensure the path is correct
+  const { nodes, materials  } = useGLTF('head_model.glb'); // Ensure the path is correct
   const [dummy] = useState(() => new THREE.Object3D());
 
   useFrame((state, dt) => {
