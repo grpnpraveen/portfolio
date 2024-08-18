@@ -2,11 +2,17 @@ import './App.css'
 // import Face from './assets/face_icon.png'
 import Loadingsvg from '/loading.svg'
 import { useEffect, useState } from 'react'
-import Centerstage from './components/Centerstage'
+import { Route, Routes, useLocation } from 'react-router-dom'
+import Home from './components/Home'
+import About from './components/About'
+import { AnimatePresence } from 'framer-motion';
+
 
 function App() {
 
-    const [show_image, set_show_image] = useState(true)
+    const [show_image, set_show_image] = useState(false)
+    const location = useLocation();
+
     useEffect(()=>{
       setTimeout(()=>{
         set_show_image(false)
@@ -19,21 +25,24 @@ function App() {
       <div>
         { show_image ? (
           <>
-          <div className="absolute invisible">
-             <Centerstage  />
-          </div>
-          <img src={Loadingsvg}></img>
+            <img src={Loadingsvg}></img>
           </>
         ) : (
           <>
-            <div className="flex flex-row space-x-32">
+          <AnimatePresence>
+
+
+
            
 
-            {/* CENTER STAGE */}
-            <Centerstage  />
-             
+          <Routes location={location} key={location.pathname}>
+            <Route index path="/portfolio" element={<Home/>}/>
+            <Route path="/portfolio/about" element={<About/>}/>
+          </Routes>
+          </AnimatePresence>
+           
 
-            </div>
+
  
           </>
           

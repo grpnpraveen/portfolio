@@ -3,6 +3,8 @@ import Memoji from './Memoji'
 import Infocard from './Infocard'
 import Media from './Media'
 import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
+
 // import classNames from 'classnames';
 
 Tooltip.propTypes = {
@@ -28,21 +30,33 @@ function Centerstage(props)
     return (
             <>
             <div className='flex flex-col'>
-              <div className="bubble bubble3 size-28 rounded-full text_custom hover:bg-orange-400/65 text_custom">
-                <text>&lt;WhoamI/&gt;</text>
-              </div>
-              <div className="bubble bubble5 size-36 mt-44 hover:bg-yellow-400/65 rounded-full text_custom">
-              <text>&lt;Experience/&gt;</text>
-              </div>
+              <Link to="/portfolio/about">
+                <div className="bubble bubble3 size-28 rounded-full text_custom hover:bg-orange-400/65 text_custom">
+                  <text>&lt;WhoamI/&gt;</text>
+                </div>
+              </Link>
+
+              <Link to="/portfolio/experience">
+                <div className="bubble bubble5 size-36 mt-44 hover:bg-yellow-400/65 rounded-full text_custom">
+                <text>&lt;Experience/&gt;</text>
+                </div> 
+              </Link>
+
             </div>
 
             <div className='flex flex-col'>
-              <div className="bubble size-36 mt-36 hover:bg-purple-400/65 rounded-full text_custom">
-                <text>&lt;Projects/&gt;</text>
-              </div>
-              <div className="bubble size-20 mt-44 hover:bg-cyan-400/65 rounded-full text_custom">
-              <text>&lt;Skills/&gt;</text>
-              </div>
+
+              <Link to="/portfolio/projects">
+                <div className="bubble size-36 mt-36 hover:bg-purple-400/65 rounded-full text_custom">
+                  <text>&lt;Projects/&gt;</text>
+                </div>
+              </Link>
+
+              <Link to="/portfolio/skills">
+                <div className="bubble size-20 mt-44 hover:bg-cyan-400/65 rounded-full text_custom">
+                <text>&lt;Skills/&gt;</text>
+                </div>
+              </Link>
             </div>
       
         <div id='center_stage' className={`'p_centerPart flex flex-col rounded-[15px] bg-zinc-800/10 px-3 text-sm font-medium text-zinc-200 shadow-lg shadow-zinc-100/5 ring-1 ring-zinc-900/5 backdrop-blur dark:bg-zinc-800/90 dark:text-zinc-200 dark:ring-white/10 w-[450px]' ${props.show}`}>
@@ -100,35 +114,43 @@ function Centerstage(props)
             </svg>
           </Media>
 
-          <Tooltip text="Hire Me">
+          <Tooltip text="Mail Me">
             <Media href='mailto:grpnpraveen@gmail.com'>
-              <img draggable="false"  src='./hire_me.png'></img>
+              <img draggable="false"  src='./mail_me.png'></img>
             </Media>
         </Tooltip>
         
 
         </div>
 
-
-    
     </div>
 
     <div className='flex flex-col'>
-              <div className="bubble size-20 mt-36 hover:bg-blue-300/65 rounded-full text_custom">
-                <text>&lt;ECA/&gt;</text>
-              </div>
-              <div className="bubble bubble3 size-36 mt-44 hover:bg-orange-400/65 rounded-full text_custom">
-              <text>&lt;Education/&gt;</text>
-              </div>
-            </div>
-           <div className='flex flex-col'>
-                  <div className="bubble2 size-24 hover:bg-red-400/65 rounded-full text_custom">
-                    <text>&lt;Hire Me/&gt;</text>
-                  </div>
-              <div className="bubble size-36 mt-44 hover:bg-green-400/65 rounded-full text_custom">
-              <text>&lt;Resume/&gt;</text>
-              </div>
-            </div>
+     <Link to="/portfolio/eca">
+        <div className="bubble size-20 mt-36 hover:bg-blue-300/65 rounded-full text_custom">
+          <text>&lt;ECA/&gt;</text>
+        </div>
+        </Link>
+      <Link to="/portfolio/education">
+        <div className="bubble bubble3 size-36 mt-44 hover:bg-orange-400/65 rounded-full text_custom">
+        <text>&lt;Education/&gt;</text>
+        </div>
+      </Link>
+    </div>
+
+    <div className='flex flex-col'>
+      <a href='mailto:grpnpraveen@gmail.com'  target='blank'>
+        <div className="bubble2 size-28 hover:bg-red-400/65 rounded-full text_custom">
+          <text>&lt;Mail Me/&gt;</text>
+        </div>
+      </a>
+
+      <Link to="/portfolio/resume">
+          <div className="bubble size-36 mt-44 hover:bg-green-400/65 rounded-full text_custom">
+            <text>&lt;Resume/&gt;</text>
+          </div>
+      </Link>
+    </div>
 
 </>
     )
