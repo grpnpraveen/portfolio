@@ -9,7 +9,7 @@
   text-align: center;
 }
 .nav {
-  position: fixed;
+  position: relative;
   width: 100%;
   display: flex;
   justify-content : space-between

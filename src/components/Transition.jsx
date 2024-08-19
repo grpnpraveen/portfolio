@@ -24,8 +24,10 @@ function Transition({text_color_to , heading, children, bg_color_to})
             exit={{ scaleY: 1 }}
             transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}
             style={{
-              width: '100%',
-              height: '100vh',
+              minWidth: '100vw',
+              width: '100vw',
+              minHeight: '100%',
+              height: 'auto',
               background: 'white',
               position: 'absolute',
               top: '0',
