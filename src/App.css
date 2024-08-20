@@ -3,11 +3,19 @@
 @tailwind utilities;
 
 #root {
-  max-width: 100vw;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 100vw;
+  /* margin: 0 auto; */
+  /* padding: 2rem; */
+  /* text-align: center; */
 }
+
+.star-canvas {
+  position: fixed;
+}
+
 .nav {
   position: relative;
   width: 100%;
@@ -83,7 +91,7 @@
 .bubble2 {
   animation: float 2s ease-out infinite;
   cursor: pointer;
-  box-shadow: 5px 6px 10px rgba(255, 0, 0, 0.2);
+  box-shadow: 5px 5px 50px rgba(135, 133, 133, 0.31);
   transform-style: preserve-3d;
   display: flex;
   justify-content: center;
@@ -93,11 +101,11 @@
 
 .bubble3{
   animation: float 5s ease-out infinite;
-  --translateY-start:10;
+  --translateY-start:0;
 }
 .bubble4{
   animation: float 5s ease-out infinite;
-  --translateY-start:-40;
+  --translateY-start:0;
 }
 
 .text_custom{
@@ -106,8 +114,6 @@
   letter-spacing: 0.2ch;
   font-style: italic;
   transition: 0.5s ease-in-out;
-  font-family: Cambria;
-
   
   backdrop-filter: blur( 20px );
   -webkit-backdrop-filter: blur( 20px );
