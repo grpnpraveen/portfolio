@@ -31,13 +31,13 @@ function Centerstage(props)
     return (
             <>
             <div className='flex flex-col z-10'>
-              <Link to="/portfolio/about">
+              <Link to="/about">
                 <div className="bubble bubble3 size-28 rounded-full text_custom hover:bg-orange-400/65 text_custom">
                   <text>&lt;WhoamI/&gt;</text>
                 </div>
               </Link>
 
-              <Link to="/portfolio/experience">
+              <Link to="/experience">
                 <div className="bubble bubble5 size-36 mt-44 hover:bg-yellow-400/65 rounded-full text_custom">
                 <text>&lt;Experience/&gt;</text>
                 </div> 
@@ -47,13 +47,13 @@ function Centerstage(props)
 
             <div className='flex flex-col z-10'>
 
-              <Link to="/portfolio/projects">
+              <Link to="/projects">
                 <div className="bubble size-36 mt-36 hover:bg-purple-400/65 rounded-full text_custom">
                   <text>&lt;Projects/&gt;</text>
                 </div>
               </Link>
 
-              <Link to="/portfolio/skills">
+              <Link to="/skills">
                 <div className="bubble size-20 mt-44 hover:bg-cyan-400/65 rounded-full text_custom">
                   <text>&lt;Skills/&gt;</text>
                 </div>
@@ -127,12 +127,12 @@ function Centerstage(props)
     </div>
 
     <div className='flex flex-col z-10'>
-     <Link to="/portfolio/eca">
+     <Link to="/eca">
         <div className="bubble size-20 mt-36 hover:bg-blue-300/65 rounded-full text_custom">
           <text>&lt;ECA/&gt;</text>
         </div>
         </Link>
-      <Link to="/portfolio/education">
+      <Link to="/education">
         <div className="bubble bubble3 size-36 mt-44 hover:bg-orange-400/65 rounded-full text_custom">
         <text>&lt;Education/&gt;</text>
         </div>
@@ -146,7 +146,7 @@ function Centerstage(props)
         </div>
       </a>
 
-      <Link to="/portfolio/resume">
+      <Link to="/resume">
           <div className="bubble size-36 mt-44 hover:bg-green-400/65 rounded-full text_custom">
             <text>&lt;Resume/&gt;</text>
           </div>
