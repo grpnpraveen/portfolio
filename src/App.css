@@ -109,7 +109,11 @@
   animation: float 5s ease-out infinite;
   --translateY-start:0;
 }
-
+.loading_text
+{
+  color: rgba(255, 255, 255, 0.729);
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
 .text_custom{
   color: rgba(255, 255, 255, 0.729);
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
