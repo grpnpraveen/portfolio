@@ -30,46 +30,51 @@ function Centerstage(props)
 {
     return (
             <>
-            <div className='flex flex-col z-10'>
-              <Link to="/about">
+            <div className='flex flex-col items-center z-10'>
+             
                 <div className="bubble bubble3 size-28 rounded-full text_custom hover:bg-orange-400/65 text_custom">
+                <Link to="/about" className='absolute w-[100%] h-[100%]'> </Link>
                   <p>&lt;WhoamI/&gt;</p>
+                  
                 </div>
-              </Link>
+             
 
-              <Link to="/experience">
+            
                 <div className="bubble bubble5 size-36 mt-44 hover:bg-yellow-400/65 rounded-full text_custom">
+                <Link to="/experience" className='absolute w-[100%] h-[100%]'> </Link>
                 <p>&lt;Experience/&gt;</p>
                 </div> 
-              </Link>
+            
 
             </div>
 
             <div className='flex flex-col z-10'>
 
-              <Link to="/projects">
+             
                 <div className="bubble size-36 mt-36 hover:bg-purple-400/65 rounded-full text_custom">
+                <Link to="/projects" className='absolute w-[100%] h-[100%]'> </Link>
                   <p>&lt;Projects/&gt;</p>
                 </div>
-              </Link>
+             
 
-              <Link to="/skills">
+             
                 <div className="bubble size-20 mt-44 hover:bg-cyan-400/65 rounded-full text_custom">
+                <Link to="/skills" className='absolute w-[100%] h-[100%]'> </Link>
                   <p>&lt;Skills/&gt;</p>
                 </div>
-              </Link>
+           
             </div>
       
-        <div id='center_stage' className={`p_centerPart z-10 flex flex-col rounded-[15px] bg-zinc-800/10 px-3 text-sm font-medium text-zinc-200 shadow-lg shadow-zinc-100/5 ring-1 ring-zinc-900/5 backdrop-blur dark:bg-zinc-800/90 dark:text-zinc-200 dark:ring-white/10 $w-[350px] {props.show}`}>
+        <div id='center_stage' className={`p_centerPart z-10 flex flex-col items-center justify-center rounded-[15px] bg-zinc-800/10 px-3 text-sm font-medium text-zinc-200 shadow-lg shadow-zinc-100/5 ring-1 ring-zinc-900/5 backdrop-blur dark:bg-zinc-800/90 dark:text-zinc-200 dark:ring-white/10 $w-[350px] {props.show}`}>
         {/* h-[550px] */}
           <div className="flex flex-row self-center items-center rounded-[20px] bg-gradient-to-r from-[#374151] to-[#111827] mt-5 size-36 shadow-xl hover:shadow-sm">
             {/* <img src={Face} className="justify-center item-center size-30"/> */}
             <Memoji/>
           </div>
 
-          <h2 className=" font-semibold from-neutral-50 text-2xl mt-4">Ravi Praveen Gali</h2>
-          <div className="items-center rounded-md bg-slate-700 w-40 mt-3 p-1 ms-[21%]">
-            Software Engineer
+          <h2 className="font-semibold from-neutral-50 text-2xl mt-4">Ravi Praveen Gali</h2>
+          <div className="flex flex-col items-center justify-center text-center rounded-md bg-slate-700 w-40 mt-3 p-1">
+            Grad Student@SBU
           </div>
 
           <hr className="flex self-center mt-6 h-px my-8 bg-gray-200 border-0 dark:bg-zinc-400 size-52"></hr>
@@ -127,30 +132,34 @@ function Centerstage(props)
     </div>
 
     <div className='flex flex-col z-10'>
-     <Link to="/eca">
+    
         <div className="bubble size-20 mt-36 hover:bg-blue-300/65 rounded-full text_custom">
+        <Link to="/eca" className='absolute w-[100%] h-[100%]'> </Link>
           <p>&lt;ECA/&gt;</p>
         </div>
-        </Link>
-      <Link to="/education">
+
+     
         <div className="bubble bubble3 size-36 mt-44 hover:bg-orange-400/65 rounded-full text_custom">
+        <Link to="/education" className='absolute w-[100%] h-[100%]'> </Link>
         <p>&lt;Education/&gt;</p>
         </div>
-      </Link>
+
     </div>
 
     <div className='flex flex-col z-10'>
-      <a href='mailto:grpnpraveen@gmail.com'  target='blank'>
+     
         <div className="bubble2 size-28 hover:bg-red-400/65 rounded-full text_custom">
+        <a href='mailto:grpnpraveen@gmail.com'  target='blank' className='absolute w-[100%] h-[100%]'>   </a>
           <p>&lt;Mail Me/&gt;</p>
         </div>
-      </a>
+   
 
-      <Link to="/resume">
+     
           <div className="bubble size-36 mt-44 hover:bg-green-400/65 rounded-full text_custom">
+          <Link to="/resume" className='absolute w-[100%] h-[100%]'> </Link>
             <p>&lt;Resume/&gt;</p>
           </div>
-      </Link>
+
     </div>
 
 </>

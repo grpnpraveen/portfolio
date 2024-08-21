@@ -52,7 +52,7 @@ function About()
 
 
 
-      <div className="pb-10"></div>
+      <div className="pb-[5%]"></div>
 
     </div>
 

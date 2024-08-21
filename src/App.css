@@ -111,8 +111,8 @@
 }
 
 .text_custom{
-  color: white;
-  font-family: monospace;
+  color: rgba(255, 255, 255, 0.729);
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   background-color: rgba(0, 0, 0, 0.4);;
   letter-spacing: 0.2ch;
   font-style: italic;

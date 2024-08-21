@@ -25,8 +25,10 @@
 body {
   display: flex;
   flex-direction: column; /* Stack content vertically */
-  align-items: center; /* Center content horizontally within body */
-  justify-content: center; /* Center content vertically within body */
+   /* Center content horizontally within body */
+  /* align-items: center; */
+  /* Center content vertically within body */
+  justify-content: center; 
   width: 100%; /* Allow body to shrink within root */
   max-width: 1200px; /* Optional: set a max width for the body */
   margin: 0 auto; /* Center body horizontally with auto margin */

@@ -24,7 +24,7 @@ function App() {
 
   return (
     <>
-      <div>
+      <div className='flex flex-col items-center justify-center self-center place-content-center'>
         {show_image ? (
           <>
             <img src={Loadingsvg} alt="Loading..." />
