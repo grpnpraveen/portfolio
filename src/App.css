@@ -15,6 +15,7 @@
 
 .star-canvas {
   position: fixed;
+  z-index: 9;
 }
 
 .nav {
@@ -111,6 +112,7 @@
 
 .text_custom{
   color: white;
+  font-family: monospace;
   background-color: rgba(0, 0, 0, 0.4);;
   letter-spacing: 0.2ch;
   font-style: italic;

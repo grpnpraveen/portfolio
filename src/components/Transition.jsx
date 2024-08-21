@@ -36,6 +36,7 @@ function Transition({text_color_to , heading, children, bg_color_to, star_color_
               top: '0',
               left: '0',
               transformOrigin: 'bottom',
+              zIndex:8
             }}
           >
             <StarCanvas color_to={star_color_to}/>
