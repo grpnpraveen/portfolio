@@ -31,7 +31,8 @@ body {
   justify-content: center; 
   width: 100%; /* Allow body to shrink within root */
   max-width: 1200px; /* Optional: set a max width for the body */
-  margin: 0 auto; /* Center body horizontally with auto margin */
+ /* Center body horizontally with auto margin */
+ /* margin: 0 auto; */
 }
 
 

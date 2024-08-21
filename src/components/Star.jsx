@@ -197,7 +197,7 @@ function StarCanvas({color_to}) {
 
   return (<canvas className="star-canvas" ref={starCanvasRef}
     style={{
-      position: "absolute",
+      position: "fixed",
       top: 0,
       left: 0,
       width: "100%",

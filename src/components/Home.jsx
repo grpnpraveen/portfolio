@@ -6,7 +6,7 @@ function Home()
     return (
             <>
             
-             <div className="flex flex-row space-x-[4vw] justify-center w-[100%]">
+             <div className="flex flex-row space-x-16 justify-center w-[100%]">
              <StarCanvas color_to='rgba(255,255,255,' />
                 {/* CENTER STAGE */}
                 <Centerstage  />
