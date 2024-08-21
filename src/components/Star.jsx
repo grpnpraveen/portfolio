@@ -96,8 +96,8 @@ function StarCanvas({color_to}) {
   };
 
   const update = () => {
-    velocity.tx *= 0.96;
-    velocity.ty *= 0.96;
+    velocity.tx *= 0.86;
+    velocity.ty *= 0.86;
 
     velocity.x += (velocity.tx - velocity.x) * 0.2;
     velocity.y += (velocity.ty - velocity.y) * 0.2;
@@ -185,8 +185,9 @@ function StarCanvas({color_to}) {
     };
 
     window.onresize = (_) => resize(canvas);
-    canvas.onmousemove = onMouseMove;
-    document.onmouseleave = onMouseLeave;
+    // canvas.onmousemove = onMouseMove;
+    window.addEventListener('mousemove', onMouseMove);
+    // document.onmouseleave = onMouseLeave;
 
     generate();
     resize(canvas);

@@ -1,9 +1,7 @@
 import '../App.css'
-// import wave from '../assets/wave'
 import { Link } from 'react-router-dom';
 import {Helmet} from "react-helmet";
 import PropTypes from 'prop-types';
-
 
 Navbar.propTypes = {
     home_color: PropTypes.string,
@@ -26,9 +24,12 @@ function Navbar(props)
                
                 </div>
 
+               
                 <div id='text_wave'>
                     Home
                 </div>
+
+               
             </Link>
             </div>
             {/* <div className='nav-links'>
