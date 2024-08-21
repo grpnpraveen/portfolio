@@ -29,7 +29,7 @@ function Centerstage(props)
 {
     return (
             <>
-            <div className='flex flex-col'>
+            <div className='flex flex-col z-10'>
               <Link to="/portfolio/about">
                 <div className="bubble bubble3 size-28 rounded-full text_custom hover:bg-orange-400/65 text_custom">
                   <text>&lt;WhoamI/&gt;</text>
@@ -44,7 +44,7 @@ function Centerstage(props)
 
             </div>
 
-            <div className='flex flex-col'>
+            <div className='flex flex-col z-10'>
 
               <Link to="/portfolio/projects">
                 <div className="bubble size-36 mt-36 hover:bg-purple-400/65 rounded-full text_custom">
@@ -54,12 +54,12 @@ function Centerstage(props)
 
               <Link to="/portfolio/skills">
                 <div className="bubble size-20 mt-44 hover:bg-cyan-400/65 rounded-full text_custom">
-                <text>&lt;Skills/&gt;</text>
+                  <text>&lt;Skills/&gt;</text>
                 </div>
               </Link>
             </div>
       
-        <div id='center_stage' className={`p_centerPart flex flex-col rounded-[15px] bg-zinc-800/10 px-3 text-sm font-medium text-zinc-200 shadow-lg shadow-zinc-100/5 ring-1 ring-zinc-900/5 backdrop-blur dark:bg-zinc-800/90 dark:text-zinc-200 dark:ring-white/10 $w-[350px] {props.show}`}>
+        <div id='center_stage' className={`p_centerPart z-10 flex flex-col rounded-[15px] bg-zinc-800/10 px-3 text-sm font-medium text-zinc-200 shadow-lg shadow-zinc-100/5 ring-1 ring-zinc-900/5 backdrop-blur dark:bg-zinc-800/90 dark:text-zinc-200 dark:ring-white/10 $w-[350px] {props.show}`}>
         {/* h-[550px] */}
           <div className="flex flex-row self-center items-center rounded-[20px] bg-gradient-to-r from-[#374151] to-[#111827] mt-5 size-36 shadow-xl hover:shadow-sm">
             {/* <img src={Face} className="justify-center item-center size-30"/> */}
@@ -125,7 +125,7 @@ function Centerstage(props)
 
     </div>
 
-    <div className='flex flex-col'>
+    <div className='flex flex-col z-10'>
      <Link to="/portfolio/eca">
         <div className="bubble size-20 mt-36 hover:bg-blue-300/65 rounded-full text_custom">
           <text>&lt;ECA/&gt;</text>
@@ -138,7 +138,7 @@ function Centerstage(props)
       </Link>
     </div>
 
-    <div className='flex flex-col'>
+    <div className='flex flex-col z-10'>
       <a href='mailto:grpnpraveen@gmail.com'  target='blank'>
         <div className="bubble2 size-28 hover:bg-red-400/65 rounded-full text_custom">
           <text>&lt;Mail Me/&gt;</text>

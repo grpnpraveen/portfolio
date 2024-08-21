@@ -1,8 +1,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
 :root {
+  display: flex;
+  flex-direction: column; /* Column direction to center body vertically */
+  justify-content: center; /* Center body vertically */
+  align-items: center; /* Center body horizontally */
+  min-width: 100vw;
+  min-height: 100vh;
+  
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
@@ -11,8 +17,6 @@
   background-attachment: fixed;
   background-size: cover;
   font-synthesis: none; 
-  min-width: 100vw;
-  min-height: 100vh;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -20,35 +24,17 @@
 
 body {
   display: flex;
-  margin: 0;
-  min-width: 100vw;
-  min-height: 100vh;
-  justify-content: center;
-  align-items: center;
+  flex-direction: column; /* Stack content vertically */
+  align-items: center; /* Center content horizontally within body */
+  justify-content: center; /* Center content vertically within body */
+  width: 100%; /* Allow body to shrink within root */
+  max-width: 1200px; /* Optional: set a max width for the body */
+  margin: 0 auto; /* Center body horizontally with auto margin */
 }
 
-@media (max-width: 1200px) {
-  :root {
-    font-size: 18px; /* Adjust the base font size for smaller screens */
-  }
-}
 
+/* Media Queries for Smaller Screens */
 @media (max-width: 768px) {
-  :root {
-    font-size: 16px; /* Further adjust font size for tablets */
-  }
   body {
-    flex-direction: column; /* Stack items vertically on smaller screens */
-    padding: 20px;
-  }
-}
-
-@media (max-width: 480px) {
-  :root {
-    font-size: 14px; /* Further adjust font size for mobile devices */
-    background-size: cover; /* Ensure background scales properly on mobile */
-  }
-  body {
-    padding: 10px;
-  }
-}
+    padding: 10px; /* Reduce padding on smaller screens */
+  }}

@@ -4,12 +4,13 @@
 
 #root {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  min-width: 100vw;
-  /* margin: 0 auto; */
-  /* padding: 2rem; */
-  /* text-align: center; */
+  flex-direction: row;
+  /* justify-content: center;
+  align-items: center; */
+  /* min-width: 100vw;
+  margin: 0 auto;
+  padding: 20rem;
+  text-align: center; */
 }
 
 .star-canvas {

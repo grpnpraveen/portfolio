@@ -1,17 +1,18 @@
 import '../App.css'
+import StarCanvas from './Star';
 import Centerstage from './Centerstage'
-
 function Home()
 {
     return (
             <>
-             <div className="flex flex-row space-x-32">
-           
-
+            
+             <div className="flex flex-row space-x-[4vw] justify-center w-[100%]">
+             <StarCanvas color_to='rgba(255,255,255,' />
                 {/* CENTER STAGE */}
                 <Centerstage  />
        
              </div>
+             {/* </StarCanvas> */}
             </>);
 }
 
