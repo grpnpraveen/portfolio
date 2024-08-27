@@ -17,7 +17,7 @@ function About()
           initial={{ x: '-200%' }}
           animate={{ x: '0%' }}
           exit={{ x: '100%' }}
-          transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}
+          transition={{ duration: 2, ease: [0.22, 1, 0.36, 1] }}
         >
 
           <div className="text-left w-[60%]">
@@ -33,7 +33,7 @@ function About()
           initial={{ x: '-200%' }}
           animate={{ x: '0%' }}
           exit={{ x: '100%' }}
-          transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}
+          transition={{ duration: 3, ease: [0.22, 1, 0.36, 1] }}
         >
         <div className="flex flex-row mt-28">
 
@@ -55,7 +55,13 @@ function About()
         </motion.div>
 
       {/* Three */}
-
+      
+      <motion.div
+          initial={{ x: '-200%' }}
+          animate={{ x: '0%' }}
+          exit={{ x: '100%' }}
+          transition={{ duration: 3, ease: [0.22, 1, 0.36, 1] }}
+        >
       <div className="flex flex-row mt-28">
 
       <div className="text-left text-xl w-[60%]">
@@ -71,7 +77,7 @@ function About()
 
       </div> 
 
-
+</motion.div>
 
 
 
@@ -82,6 +88,12 @@ function About()
 
 
       {/* Four */}
+      <motion.div
+          initial={{ x: '-200%' }}
+          animate={{ x: '0%' }}
+          exit={{ x: '100%' }}
+          transition={{ duration: 3, ease: [0.22, 1, 0.36, 1] }}
+        >
 
       <div className="flex flex-row mt-28">
 
@@ -99,11 +111,16 @@ function About()
         </div> 
 
 
-    
+    </motion.div>
 
         {/* Five */}
 
-
+        <motion.div
+          initial={{ x: '-200%' }}
+          animate={{ x: '0%' }}
+          exit={{ x: '100%' }}
+          transition={{ duration: 3, ease: [0.22, 1, 0.36, 1] }}
+        >
         <div className="flex flex-row mt-28">
 
         <div className="text-left text-xl w-[60%]">
@@ -120,7 +137,7 @@ function About()
         </div> 
 
 
-    
+    </motion.div>
 
 
 
