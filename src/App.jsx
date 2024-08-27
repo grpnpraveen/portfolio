@@ -8,6 +8,7 @@ import Projects from './components/Projects';
 import Experience from './components/Experience';
 import Skills from './components/Skills';
 import Eca from './components/Eca';
+import Education from './components/Education';
 import { motion } from "framer-motion";
 // import { AnimatePresence } from 'framer-motion';
 
@@ -86,6 +87,7 @@ function App() {
               <Route path="/experience" element={<Experience />} />
               <Route path="/skills" element={<Skills />} />
               <Route path="/eca" element={<Eca />} />
+              <Route path="/education" element={<Education />} />
             </Routes>
             </Suspense>
           </>
