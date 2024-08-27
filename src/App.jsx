@@ -12,7 +12,7 @@ import { motion } from "framer-motion";
 // import { AnimatePresence } from 'framer-motion';
 
 function App() {
-  const [show_image, set_show_image] = useState(true);
+  const [show_image, set_show_image] = useState(false);
   const location = useLocation();
 
   const containerVariants = {
@@ -36,7 +36,7 @@ function App() {
   useEffect(() => {
     const timer = setTimeout(() => {
       set_show_image(false);
-    }, 4000);
+    }, 3000);
 
     return () => clearTimeout(timer); // Clean up the timer
   }, []);
