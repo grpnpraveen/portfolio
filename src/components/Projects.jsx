@@ -30,7 +30,7 @@ function Projects()
 
     return(
       <>
-          <Transition text_color_to='text-purple-500' bg_color_to='bg-purple-500' heading='Projects'star_color_to='rgb(168, 85, 247,' >
+          <Transition text_color_to='text-purple-500' bg_color_to='bg-purple-500' heading='Projects'star_color_to='rgb(0, 0, 0,' >
 
           <div className="flex flex-col p-10 sm:flex-row sm:flex-wrap lg:justify-center gap-6">
 
