@@ -1,0 +1,137 @@
+./pomo.jpeg|
+Real Pomodoro|
+Created an online Pomodoro timer featuring a 3D model interface, integrating time management techniques with interactive 3D visuals for a more engaging productivity experience|
+https://github.com/grpnpraveen/therealpomodoro-static-deploy
+*
+./http.jpg|
+Http Server|
+Developed a basic HTTP server from scratch in Python, utilizing the `socket` library to handle network connections, parse HTTP requests, and send responses, providing a foundation for understanding web server fundamentals.|
+https://github.com/grpnpraveen/http-server-from-scratch
+
+*
+
+./shell.png|
+Shell|
+In this, I built my own POSIX compliant shell that's capable of interpreting shell commands, running external programs and builtin commands like cd, pwd, echo and more.|
+https://github.com/grpnpraveen/Shell-From-Scratch
+
+*
+
+./firstsite.png|
+Relaxation Zone|
+Your go-to guide for finding the best online destinations to relax and enjoy. Dive into a variety of fun and engaging sites tailored for leisure and enjoyment.|
+https://github.com/grpnpraveen/first.website.io
+
+*
+
+./moviereco.png|
+Movie Recommender BasedOn Content & ContentCreators|
+This project recommends movies similar to a user's favorite by leveraging knowledge graphs and natural language processing to analyze content, genres, and creators, providing tailored suggestions based on plot, genre, directors, and writers.|
+https://github.com/grpnpraveen/Movie-Recommender-BasedOn-Content-and-ContentCreators
+
+*
+
+./vidstream.jpg|
+Vidstream|
+Designed Vidstream, a cutting-edge real-time video streaming service implemented in React. This innovative platform can be utilized within private networks or made accessible to the internet. Integrated OBS Studio as the tool for seamless real-time screen streaming.|
+https://github.com/grpnpraveen/VidStream
+
+
+*
+./pca.png|
+PCA|
+PCA on weather data simplifies complex weather patterns by reducing dimensionality, making it easier to analyze and visualize key trends and variations.|
+https://github.com/grpnpraveen/PrincipleComponentAnalysis
+
+*
+./mds.png|
+MDS|
+MDs (Multidimensional Scaling) on weather data visualizes complex weather patterns in lower dimensions, helping to identify and understand relationships and similarities between different weather conditions.|
+https://github.com/grpnpraveen/MDS_Analysis
+
+
+*
+./spotify.jpg|
+Spotify Music Wellness Index Analysis|
+Conducted analysis on the Spotify Music Wellness Index, exploring how various music genres and attributes impact listener well-being, leveraging data to uncover trends and insights in music and wellness.|
+https://github.com/grpnpraveen/Spotify-Music-Wellness-Index-Analysis
+
+
+
+*
+./global.jpg|
+Global Weather Viz|
+Developed a global weather data visualization tool to analyze and display weather patterns and trends worldwide, facilitating insightful and interactive exploration of meteorological data|
+https://github.com/grpnpraveen/GlobalWeatherData_Visualization
+
+*
+./gshadow.jpg|
+GShadow Addon|
+An addon for the blender to add shadows to the grease pencil primitives or drawing or any grease pencil objects.|
+https://github.com/grpnpraveen/GShadow-add-on
+
+*
+./tic.jpg|
+Tic Tac Toe|
+Implemented a classic Tic-Tac-Toe game in C, featuring a simple text-based interface and game logic for two-player gameplay, demonstrating fundamental programming concepts and user interaction.|
+https://github.com/grpnpraveen/Tic-tac-toe
+*
+./snake.png|
+Snake Game|
+Developed a console-based Snake game in C++, complete with both source code and executable file, showcasing fundamental game development concepts and user interaction through a text-based interface.|
+https://github.com/grpnpraveen/Snake_Game_cpp
+
+*
+./stroop.png|
+Stroop|
+Created a Stroop Game in Unity, leveraging the engine's capabilities to design an engaging cognitive challenge that tests reaction times and color-word associations, with interactive gameplay and visual effects.|
+https://github.com/grpnpraveen/Stroop_Game
+
+*
+./sim.jpg|
+Rigid Body Simulation|
+Developed a Trail Simulation Data project using the Bullet Physics API and Blender for development, creating realistic motion trails and showcasing the results through detailed simulation and visualization techniques.|
+https://github.com/grpnpraveen/Trail_SimulationData_Rigidbody
+*
+./lazy.jpg|
+Lazy Listener|
+Developed the Lazy Listener project for converting text to audio, leveraging advanced text-to-speech technology to generate spoken audio from written text. The GitHub repository includes the code and documentation for this audio processing tool.|
+https://github.com/grpnpraveen/Lazy_Listener
+
+*
+./home.png|
+Home Automation Dashboard|
+Developed HomeAutomation_Dashboards to provide intuitive and interactive interfaces for managing and monitoring smart home systems. The project includes visual dashboards for controlling various home automation features and tracking system status.|
+https://github.com/grpnpraveen/HomeAutomation_Dashboards
+
+*
+./3d.png|
+3D Viewer|
+Developed a basic 3DViewer for displaying and interacting with 3D models, providing a straightforward tool for visualizing 3D data in an accessible and user-friendly format.|
+https://github.com/grpnpraveen/3DViewer
+*
+./meme.png|
+MemeBash|
+Developed a multi-lingual bot that delivers famous dialogues in English, Telugu, and Hindi, and offers various meme creation commands. Features include generating memes with famous dialogues, custom text, and face replacement. The bot also monitors language use for inappropriate content.|
+https://github.com/grpnpraveen/MemeBash
+
+*
+./atten.jpg|
+Capture|
+Developed an online face recognition system for automated attendance management, capturing and verifying facial data to record attendance accurately and efficiently.|
+https://github.com/grpnpraveen/Capture_AttendenceSystem
+
+
+*
+./url.png|
+URL Transfer|
+Developed an app and web extension for seamless URL transfer between PC and mobile devices, enabling efficient and convenient sharing of web links across platforms.|
+https://github.com/grpnpraveen/urltransferApp
+
+*
+./link.jpg|
+Link|
+Created a one-stop platform for startups, providing comprehensive resources and tools for launching and managing new ventures, streamlining access to essential services and support.|
+https://github.com/sishir2001/link-client
+
+
