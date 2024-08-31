@@ -25,8 +25,8 @@ function Timeline(props)
 
     const infoSentences = props.info.split('•').filter(sentence => sentence.trim() !== '');
 
-    console.log(infoSentences);
-    console.log(badges_list);
+    // console.log(infoSentences);
+    // console.log(badges_list);
    
 
     return (
@@ -43,17 +43,35 @@ function Timeline(props)
                 <p className="mb-4 text-lg font-normal text-gray-300 w-[60%] text-left">
 
                 {infoSentences.map((sentence, index) => (
-                        <span key={index}>
-                            <br></br>
+                        <span key={index} className='text-left'>
+                            
                             • {sentence.trim()}
                             {/* {index < infoSentences.length - 1 && ' • '} */}
+                            <br></br>
                         </span>
                     ))}
 
                 </p>
 
+
+                {props.badges && (
+                <div className="flex flex-wrap">
+                    {badges_list.map((val, index) => (
+                        <span 
+                            className="bg-white text-black font-medium text-xs me-2 px-2.5 py-0.5 rounded-full mb-2" 
+                            style={{ maxWidth: '10.66%' }} 
+                            key={index}
+                        >
+                            {val.trim()}
+                        </span>
+                        
+                       
+                    ))}
+                </div>
+                )}
+                
                 {props.href && (
-                    <a href={props.href} target="_blank" rel="noopener noreferrer" className="inline-flex items-center px-4 py-2 text-sm font-medium   border rounded-lg  bg-gray-800 text-gray-400 border-gray-600 hover:text-white hover:bg-gray-700 focus:ring-gray-700">
+                    <a href={props.href} target="_blank" rel="noopener noreferrer" className="inline-flex items-center mt-5 px-4 py-2 text-sm font-medium   border rounded-lg  bg-gray-800 text-gray-400 border-gray-600 hover:text-white hover:bg-gray-700 focus:ring-gray-700">
                         more 
                         <svg className="w-3 h-3 ms-2 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
                             <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
@@ -61,19 +79,7 @@ function Timeline(props)
                     </a>
                 )}
 
-               {props.badges && (
-    <div className="flex flex-wrap">
-        {badges_list.map((val, index) => (
-            <span 
-                className="bg-white text-black font-medium text-xs me-2 px-2.5 py-0.5 rounded-full mb-2" 
-                style={{ maxWidth: '10.66%' }} 
-                key={index}
-            >
-                {val.trim()}
-            </span>
-        ))}
-    </div>
-)}
+             
 
 
 

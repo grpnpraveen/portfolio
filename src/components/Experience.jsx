@@ -14,7 +14,7 @@ function Experience()
          <div className="flex flex-col pl-20">
 
         <Timeline time="Aug 2023 - Dec 2023" title="Graduate Teaching Assistant" subhead="Stony Brook University, Department of Computer Science" info="• Under the guidance of Dr. Kevin McDonnell, facilitated student proficiency in computer science with Python-based weekly lab
-        sessions, hands-on exercises, and homework support. Assessed assignments and midterms for a class with 30 students." color_to={color_to}></Timeline>
+        sessions, hands-on exercises, and homework support. Assessed assignments and midterms for a class with 30 students." badges="Python" Pyth></Timeline>
        
        
         <Timeline time="Oct 2022 - Apr 2023" title="Software Engineering Intern" subhead="Yubi (Unicorn Startup), Supply Chain Finance Team"  
@@ -28,7 +28,7 @@ function Experience()
                 enhancement in response times.
                 •Completed 300 plus tickets in six months, positioning the SCF team as a top performer in innovative solution delivery, by actively
                 contributing to the development of Supply Chain Finance logic. Additionally, integrated 2 new banks into SCF." 
-          color_to={color_to} href="https://github.com/grpnpraveen/grpnpraveen/blob/main/Yubi.pdf"></Timeline>
+          color_to={color_to} href="https://github.com/grpnpraveen/grpnpraveen/blob/main/Yubi.pdf" badges="Ruby on Rails|AWS|Postgresql|Redis"></Timeline>
        
         <Timeline time="Apr 2022 - Oct 2022" title="Backend Engineer Intern" subhead="Sabudh Foundation (Remote), Depression Detection Online"  
           info=" •Developed an online Depression Detection platform using Python, Flask framework, Flask Blueprints library, Postgres, and
@@ -37,9 +37,9 @@ function Experience()
  appointments, ensuring a robust foundation for the project.
  •Orchestrated the creation of a user API tailored for doctors, patients, administrators, and other user types, ensuring a customized
  experience for over 3 user categories.
- •Streamlined and integrated a machine learning algorithm into the backend, revolutionizing the platform’s diagnostic capabilities
+ •Streamlined and integrated a machine learning algorithm into the backend, revolutionizing the platform's diagnostic capabilities
  by analyzing patient videos for signs of depression, resulting in more than 90% accuracy and enhanced treatment outcomes." 
-          color_to={color_to} href="https://github.com/grpnpraveen/grpnpraveen/blob/main/Sabudh%20Foundation.pdf"></Timeline>
+          color_to={color_to} href="https://github.com/grpnpraveen/grpnpraveen/blob/main/Sabudh%20Foundation.pdf" badges="Flask|ML|SQL|Docker|GitLab"></Timeline>
 
 
 

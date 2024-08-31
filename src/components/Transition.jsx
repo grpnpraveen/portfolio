@@ -46,7 +46,7 @@ function Transition({text_color_to , heading, children, bg_color_to, star_color_
             </div>
  
             <div className="flex flex-col p-9">
-                <text className="text-7xl text-[#cecac3] self-start">{heading} .</text> 
+                <div className="text-7xl text-[#cecac3] self-start">{heading} .</div> 
 
                 <motion.div
                   className={`w-16 h-1 mt-4 rounded ${bg_color_to}`}
