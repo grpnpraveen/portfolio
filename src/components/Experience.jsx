@@ -14,7 +14,7 @@ function Experience()
          <div className="flex flex-col pl-20">
 
         <Timeline time="Aug 2023 - Dec 2023" title="Graduate Teaching Assistant" subhead="Stony Brook University, Department of Computer Science" info="• Under the guidance of Dr. Kevin McDonnell, facilitated student proficiency in computer science with Python-based weekly lab
-        sessions, hands-on exercises, and homework support. Assessed assignments and midterms for a class with 30 students." badges="Python" Pyth></Timeline>
+        sessions, hands-on exercises, and homework support. Assessed assignments and midterms for a class with 30 students." badges="Python"  color_to={color_to}></Timeline>
        
        
         <Timeline time="Oct 2022 - Apr 2023" title="Software Engineering Intern" subhead="Yubi (Unicorn Startup), Supply Chain Finance Team"  
