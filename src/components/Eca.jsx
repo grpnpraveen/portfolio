@@ -11,7 +11,7 @@ function Eca()
     
     <div className="flex flex-col pl-20">
       <Timeline time="Aug 2023 - Present" title="Masters in Computer Science" subhead="Stony Brook University, New York" 
-      info="•Managed office operations, including administrative tasks, team coordination, and resource management [] Office Manager for GSO from     April 2024 to Present ].
+      info="•Managed office operations, including administrative tasks, team coordination, and resource management [Office Manager for GSO from    April 2024 to Present ].
             •Successfully managed events, overseeing logistics, planning, and coordination [Event Manager for GSO events, handling event planning from January 2024 to April 2024].
             
             •Worked with the Student Accessibility Support Center as a proctor, ensuring fair testing conditions and assisting students with special needs.
