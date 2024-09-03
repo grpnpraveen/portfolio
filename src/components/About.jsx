@@ -21,7 +21,7 @@ function About()
         >
 
           <div className="text-left w-[60%]">
-            Hi, I'm <span className=" text-orange-500">Ravi Praveen Gali</span> (He/Him), currently pursuing a Master's in Computer Science at Stony Brook University, NY. My journey in the tech world is driven by a deep passion for programming. 
+            Hi, I'm <span className=" text-orange-500">Ravi Praveen Gali</span> (He/Him/His), currently pursuing a Master's in Computer Science at Stony Brook University, NY. My journey in the tech world is driven by a deep passion for programming. 
             <br></br>
             <br></br>
             With a strong foundation in Python, AI/ML, and Data Science, I specialize in building comprehensive solutions from the ground up. My journey in tech is rooted in continuous learning, and I've honed my skills in both front-end and back-end development. 
