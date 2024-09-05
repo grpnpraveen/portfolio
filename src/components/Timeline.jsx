@@ -5,7 +5,7 @@ import PropTypes from 'prop-types';
 Timeline.propTypes = {
     time: PropTypes.string.isRequired, //February 2022
     title: PropTypes.string.isRequired,
-    subhead: PropTypes.string.isRequired, 
+    subhead: PropTypes.string, 
     info: PropTypes.string.isRequired, 
     href: PropTypes.string,
     badges: PropTypes.string,
