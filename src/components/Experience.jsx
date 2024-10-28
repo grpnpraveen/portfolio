@@ -28,7 +28,7 @@ function Experience()
                 enhancement in response times.
                 •Completed 300 plus tickets in six months, positioning the SCF team as a top performer in innovative solution delivery, by actively
                 contributing to the development of Supply Chain Finance logic. Additionally, integrated 2 new banks into SCF." 
-          color_to={color_to} href="https://github.com/grpnpraveen/grpnpraveen/blob/main/Yubi.pdf" badges="Ruby on Rails|AWS|Postgresql|Redis"></Timeline>
+          color_to={color_to} href="https://drive.google.com/file/d/1EmmtCimns3LCd5AfSKGvqCkfdQnQE3sU/view?usp=drive_link" badges="Ruby on Rails|AWS|Postgresql|Redis"></Timeline>
        
         <Timeline time="Apr 2022 - Oct 2022" title="Backend Engineer Intern" subhead="Sabudh Foundation (Remote), Depression Detection Online"  
           info=" •Developed an online Depression Detection platform using Python, Flask framework, Flask Blueprints library, Postgres, and
@@ -39,7 +39,7 @@ function Experience()
  experience for over 3 user categories.
  •Streamlined and integrated a machine learning algorithm into the backend, revolutionizing the platform's diagnostic capabilities
  by analyzing patient videos for signs of depression, resulting in more than 90% accuracy and enhanced treatment outcomes." 
-          color_to={color_to} href="https://github.com/grpnpraveen/grpnpraveen/blob/main/Sabudh%20Foundation.pdf" badges="Flask|ML|SQL|Docker|GitLab"></Timeline>
+          color_to={color_to} href="https://drive.google.com/file/d/12av2jEpPFQn4AKhOTNdLE2v5CgeVtOYA/view?usp=drive_link" badges="Flask|ML|SQL|Docker|GitLab"></Timeline>
 
 
 

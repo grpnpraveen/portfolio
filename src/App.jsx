@@ -68,9 +68,6 @@ function App() {
                       <motion.p variants={sentenceVariants}>.</motion.p>
                       <motion.p variants={sentenceVariants}>.</motion.p>
                     </motion.div>
-                    {/* <div className='flex flex-col text-center pt-10 loading_text'>
-                      <p>L o a d i n g ....</p>
-                    </div> */}
                   </div>
           </>
         ) : (

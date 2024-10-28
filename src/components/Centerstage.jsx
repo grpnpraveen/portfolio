@@ -69,7 +69,7 @@ function Centerstage(props)
         {/* h-[550px] */}
           <div className="flex flex-row self-center items-center rounded-[20px] bg-gradient-to-r from-[#374151] to-[#111827] mt-5 size-36 shadow-xl hover:shadow-sm">
             {/* <img src={Face} className="justify-center item-center size-30"/> */}
-            <Memoji/>
+            {/* <Memoji/> */}
           </div>
 
           <h2 className="font-semibold from-neutral-50 text-2xl mt-4">Ravi Praveen Gali</h2>
@@ -156,7 +156,7 @@ function Centerstage(props)
 
      
           <div className="bubble size-36 mt-44 hover:bg-green-400/65 rounded-full text_custom">
-          <Link to="https://github.com/grpnpraveen/grpnpraveen/blob/main/Ravi_Praveen_Gali_24.pdf" target='_blank' className='absolute w-[100%] h-[100%]'> </Link>
+          <Link to="https://drive.google.com/file/d/1iQ98C2pGcF8Rbs-Dg-XpInWscbUJOZ2z/view?usp=drive_link" target='_blank' className='absolute w-[100%] h-[100%]'> </Link>
             <p>&lt;Resume/&gt;</p>
           </div>
 
