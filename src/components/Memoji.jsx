@@ -59,7 +59,7 @@ function Memoji() {
        window.removeEventListener('mousemove', handleMouseMove);
      };
    }, []);
-   const [isLoading, setIsLoading] = useState(true); // State to track loading
+   const [isLoading, setIsLoading] = useState(false); // State to track loading
   // Function to handle when the GLTF model is loaded
   const handleModelLoad = () => {
     setIsLoading(false); // Set loading to false when model has loaded
