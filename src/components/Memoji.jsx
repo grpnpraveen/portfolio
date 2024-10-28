@@ -8,7 +8,7 @@ import { motion } from "framer-motion";
 import Loadingsvg from '/loading.svg';
 function Prophead(props) {
   const mesh = useRef();
-  const { nodes, materials  } = useGLTF('/head_model.glb'); // Ensure the path is correct
+  const { nodes, materials  } = useGLTF('/portfolio/head_model.glb'); // Ensure the path is correct
   const [dummy] = useState(() => new THREE.Object3D());
 
   useFrame((state, dt) => {
@@ -136,5 +136,5 @@ function Memoji() {
     </>
   );
 }
-useGLTF.preload('head_model.glb')
+useGLTF.preload('/portfolio/head_model.glb')
 export default Memoji;

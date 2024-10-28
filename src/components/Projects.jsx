@@ -9,7 +9,7 @@ function Projects()
     const [fileContent, setFileContent] = useState('');
     useEffect(() => {
         // Path to the file in the public directory
-        fetch('data.txt')
+        fetch('/portfolio/data.txt')
           .then((response) => {
             if (response.ok) {
               return response.text(); // Read the response as text

@@ -40,7 +40,7 @@ function Navbar(props)
                 </div>
             </div> */}
            <Helmet>
-           <script src="./wave.js"></script>
+           <script src="/portfolio/wave.js"></script>
            </Helmet>
         </div>
         
