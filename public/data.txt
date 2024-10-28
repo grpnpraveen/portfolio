@@ -18,6 +18,28 @@ In this, I built my own POSIX compliant shell that's capable of interpreting she
 https://github.com/grpnpraveen/Shell-From-Scratch
 
 *
+./global.jpg|
+Global Weather Viz|
+Developed a global weather data visualization tool to analyze and display weather patterns and trends worldwide, facilitating insightful and interactive exploration of meteorological data|
+https://github.com/grpnpraveen/GlobalWeatherData_Visualization
+
+
+*
+
+./moviereco.png|
+Movie Recommender BasedOn Content & ContentCreators|
+This project recommends movies similar to a user's favorite by leveraging knowledge graphs and natural language processing to analyze content, genres, and creators, providing tailored suggestions based on plot, genre, directors, and writers.|
+https://github.com/grpnpraveen/Movie-Recommender-BasedOn-Content-and-ContentCreators
+
+*
+./spotify.jpg|
+Spotify Music Wellness Index Analysis|
+Conducted analysis on the Spotify Music Wellness Index, exploring how various music genres and attributes impact listener well-being, leveraging data to uncover trends and insights in music and wellness.|
+https://github.com/grpnpraveen/Spotify-Music-Wellness-Index-Analysis
+
+
+
+*
 
 ./pca.png|
 PCA|
@@ -34,19 +56,21 @@ https://github.com/grpnpraveen/MDS_Analysis
 
 *
 
-./spotify.jpg|
-Spotify Music Wellness Index Analysis|
-Conducted analysis on the Spotify Music Wellness Index, exploring how various music genres and attributes impact listener well-being, leveraging data to uncover trends and insights in music and wellness.|
-https://github.com/grpnpraveen/Spotify-Music-Wellness-Index-Analysis
+
+./vidstream.jpg|
+Vidstream|
+Designed Vidstream, a cutting-edge real-time video streaming service implemented in React. This innovative platform can be utilized within private networks or made accessible to the internet. Integrated OBS Studio as the tool for seamless real-time screen streaming.|
+https://github.com/grpnpraveen/VidStream
 
 
 
 *
 
-./global.jpg|
-Global Weather Viz|
-Developed a global weather data visualization tool to analyze and display weather patterns and trends worldwide, facilitating insightful and interactive exploration of meteorological data|
-https://github.com/grpnpraveen/GlobalWeatherData_Visualization
+./gshadow.jpg|
+PBR Perfect|
+Created an addon for blender whicu  streamlines PBR material creation by automatically mapping to respective texture maps|
+https://github.com/grpnpraveen/PBR_Perfect-Add-on
+
 
 *
 ./pomo.jpeg|
@@ -155,6 +179,5 @@ https://github.com/sishir2001/link-client
 Relaxation Zone|
 Your go-to guide for finding the best online destinations to relax and enjoy. Dive into a variety of fun and engaging sites tailored for leisure and enjoyment.|
 https://github.com/grpnpraveen/first.website.io
-
 
 
