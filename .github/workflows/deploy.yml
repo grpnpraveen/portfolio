@@ -4,7 +4,9 @@ on:
   push:
     branches:
       - main
-
+env:
+  ACTIONS_ALLOW_UNSECURE_NODE_VERSION: true
+  
 jobs:
   build:
     name: Build
@@ -47,6 +49,5 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./dist
-  env:
-    ACTIONS_ALLOW_UNSECURE_NODE_VERSION: true
+
     
