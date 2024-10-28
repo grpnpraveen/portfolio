@@ -1,140 +1,126 @@
+// Memoji.jsx
+
 import '../App.css';
 import * as THREE from 'three';
 import { useRef, useState, useEffect, Suspense } from 'react';
 import { Canvas, useFrame } from '@react-three/fiber';
-import { useGLTF, Stats, useTexture, Stage } from '@react-three/drei';
+import { useGLTF, Stats, Stage } from '@react-three/drei';
 import { easing } from 'maath';
 import { motion } from "framer-motion"; 
-import Loadingsvg from '/loading.svg';
-function Prophead(props) {
+import Loadingsvg from '/loading.svg'; // Ensure the path is correct
+
+function Prophead({ pointer }) {
   const mesh = useRef();
-  const { nodes, materials  } = useGLTF('/portfolio/head_model.glb'); // Ensure the path is correct
+  const { nodes, materials } = useGLTF(`${import.meta.env.BASE_URL}/head_model.glb`); // Use dynamic path
+
   const [dummy] = useState(() => new THREE.Object3D());
 
   useFrame((state, dt) => {
-    dummy.lookAt(props.pointer.x * 2 , props.pointer.y * 0.8, 1); 
+    dummy.lookAt(pointer.x * 2, pointer.y * 0.8, 1);
     easing.dampQ(mesh.current.quaternion, dummy.quaternion, 0.15, dt);
   });
-  // const texture = useTexture('baking.png')
+
   return (
-    <mesh ref={mesh}
+    <mesh
+      ref={mesh}
       castShadow
       receiveShadow
-      geometry={nodes.head.geometry} {...props} 
+      geometry={nodes.head.geometry}
       material={materials['baked#']}
-      position={[0,-0.2,0]}
+      position={[0, -0.2, 0]}
     >
-      <meshStandardMaterial  
-      {...materials['baked#']}
-      material = {materials['baked#']}
-      envMapIntensity={0.8}
-      roughness={0.5} 
-      bumpScale={1} 
-      normalScale={1} 
-      shadows
-      displacementScale={1}/>
-
+      <meshStandardMaterial
+        {...materials['baked#']}
+        envMapIntensity={0.8}
+        roughness={0.5}
+        bumpScale={1}
+        normalScale={1}
+        displacementScale={1}
+      />
     </mesh>
   );
 }
 
 function Memoji() {
-
   const [pointer, setPointer] = useState({ x: 0, y: 0 });
-  
+  const [isLoading, setIsLoading] = useState(false);
+
   useEffect(() => {
     const handleMouseMove = (event) => {
-      // Update pointer position state with the mouse coordinates
       setPointer({
-        x: (event.clientX / window.innerWidth) * 2 - 1, // Normalized to [-1, 1]
-        y: -(event.clientY / window.innerHeight) * 2 + 1 // Normalized to [-1, 1]
+        x: (event.clientX / window.innerWidth) * 2 - 1,
+        y: -(event.clientY / window.innerHeight) * 2 + 1,
       });
     };
 
-     // Add event listener for mouse movement
-     window.addEventListener('mousemove', handleMouseMove);
+    window.addEventListener('mousemove', handleMouseMove);
+    return () => window.removeEventListener('mousemove', handleMouseMove);
+  }, []);
 
-     // Cleanup the event listener on component unmount
-     return () => {
-       window.removeEventListener('mousemove', handleMouseMove);
-     };
-   }, []);
-   const [isLoading, setIsLoading] = useState(false); // State to track loading
-  // Function to handle when the GLTF model is loaded
-  const handleModelLoad = () => {
-    setIsLoading(false); // Set loading to false when model has loaded
-  };
+  const handleModelLoad = () => setIsLoading(false); // Set loading to false once loaded
+
   const sentenceVariants = {
     hidden: { opacity: 0, y: 20 },
     visible: { opacity: 1, y: 0, transition: { duration: 0.5 } },
   };
-  
+
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
       opacity: 1,
-      transition: {
-        staggerChildren: 0.5, // Delay between each sentence
-      },
+      transition: { staggerChildren: 0.5 },
     },
   };
 
   return (
     <>
-    {isLoading && (
-       <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-       <img src={Loadingsvg} alt="Loading..." className='ml-10'/>
-       <motion.div
-         className="flex flex-row space-x-2 text-center pt-10 loading_text justify-center"
-         variants={containerVariants}
-         initial="hidden"
-         animate="visible"
-       >
-         <motion.p variants={sentenceVariants}>L</motion.p>
-         <motion.p variants={sentenceVariants}>o</motion.p>
-         <motion.p variants={sentenceVariants}>a</motion.p>
-         <motion.p variants={sentenceVariants}>d</motion.p>
-         <motion.p variants={sentenceVariants}>i</motion.p>
-         <motion.p variants={sentenceVariants}>n</motion.p>
-         <motion.p variants={sentenceVariants}>g</motion.p>
-         <motion.p variants={sentenceVariants}>.</motion.p>
-         <motion.p variants={sentenceVariants}>.</motion.p>
-         <motion.p variants={sentenceVariants}>.</motion.p>
-         <motion.p variants={sentenceVariants}>.</motion.p>
-         <motion.p variants={sentenceVariants}>.</motion.p>
-       </motion.div>
-     </div>
+      {isLoading && (
+        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+          <img src={Loadingsvg} alt="Loading..." className="ml-10" />
+          <motion.div
+            className="flex flex-row space-x-2 text-center pt-10 loading_text justify-center"
+            variants={containerVariants}
+            initial="hidden"
+            animate="visible"
+          >
+            {'Loading.....'.split('').map((char, index) => (
+              <motion.p key={index} variants={sentenceVariants}>
+                {char}
+              </motion.p>
+            ))}
+          </motion.div>
+        </div>
       )}
 
-    <Canvas gl={{antialias:true,  preserveDrawingBuffer: true }} shadows dpr={[1, 1.5]} camera={{ position: [0,0,10.5], fov: 20} } >
-      
-      <ambientLight intensity={0.35}/>
-
-       <directionalLight
-        position={[10,10,10]}
-        // position={[1,1,0]}
-        castShadow
-        // color={[1,1,0]}
-        intensity={Math.PI * 0.5}
-        />
-
-      <Suspense fallback={null} shadows contactShadow preset={'rembrandt'} environment={'city'}>
-        <Stage
+      <Canvas
+        gl={{ antialias: true, preserveDrawingBuffer: true }}
         shadows
-        adjustCamera ={false}
-        contactShadow
-        preset={'rembrandt'}
-        environment={'city'}
-        onPointerMissed={handleModelLoad} // Call when model is loaded
-        >
+        dpr={[1, 1.5]}
+        camera={{ position: [0, 0, 10.5], fov: 20 }}
+      >
+        <ambientLight intensity={0.35} />
+        <directionalLight position={[10, 10, 10]} castShadow intensity={Math.PI * 0.5} />
 
-        <Prophead pointer={pointer} />
-        </Stage>
-      </Suspense>
-      {/* <Stats /> */}
-    </Canvas>
+        <Suspense fallback={null}>
+          <Stage
+            shadows
+            adjustCamera={false}
+            contactShadow
+            preset="rembrandt"
+            environment="city"
+            onLoaded={handleModelLoad} // Ensure model loading triggers correctly
+          >
+            <Prophead pointer={pointer} />
+          </Stage>
+        </Suspense>
+        {/* Uncomment for performance stats if needed */}
+        {/* <Stats /> */}
+      </Canvas>
     </>
   );
 }
-useGLTF.preload('/portfolio/head_model.glb')
+
+// Preload the GLTF model
+useGLTF.preload(`${import.meta.env.BASE_URL}/head_model.glb`);
+
 export default Memoji;
