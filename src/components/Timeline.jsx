@@ -55,15 +55,24 @@ function Timeline(props)
 
 
                 {props.badges && (
-                <div className="flex flex-wrap">
+                <div className="flex flex-wrap gap-2">
                     {badges_list.map((val, index) => (
-                        <span 
-                            className="bg-white text-black font-medium text-xs me-2 px-2.5 py-0.5 rounded-full mb-2" 
-                            style={{ maxWidth: '10.66%' }} 
-                            key={index}
-                        >
-                            {val.trim()}
-                        </span>
+                   <span
+                   className="
+                     bg-white text-black 
+                     font-medium 
+                     text-[9px] sm:text-[10px] lg:text-xs 
+                     px-1.5 py-0.5 sm:px-2 sm:py-0.5 
+                     rounded-full 
+                     mb-1 
+                     max-w-full truncate 
+                     inline-block
+                   "
+                   key={index}
+                 >
+                   {val.trim()}
+                 </span>
+                  
                         
                        
                     ))}
