@@ -156,7 +156,7 @@ function Centerstage(props)
 
      
           <div className="bubble size-36 mt-44 hover:bg-green-400/65 rounded-full text_custom">
-          <Link to="https://drive.google.com/file/d/1lRX01Hb0E4LhpHxpX4RWWBK9I2QC4V--/view?usp=drive_link" target='_blank' className='absolute w-[100%] h-[100%]'> </Link>
+          <Link to="https://drive.google.com/file/d/1KZdWXRzpDZoqCTk2Ji4WrUdoEqRyKShs/view?usp=sharing" target='_blank' className='absolute w-[100%] h-[100%]'> </Link>
             <p>&lt;Resume/&gt;</p>
           </div>
 

@@ -13,33 +13,29 @@ function Experience()
 
          <div className="flex flex-col pl-20">
 
-        <Timeline time="Aug 2023 - Dec 2023" title="Graduate Teaching Assistant" subhead="Stony Brook University, Department of Computer Science" info="• Under the guidance of Dr. Kevin McDonnell, facilitated student proficiency in computer science with Python-based weekly lab
-        sessions, hands-on exercises, and homework support. Assessed assignments and midterms for a class with 30 students." badges="Python"  color_to={color_to}></Timeline>
+        <Timeline time="Jan 2024 - Dec 2024" title="Graduate Research Assistant" subhead="Prof I.V. Ramakrishnan, Stony Brook University" 
+        info="•Architected backend systems for a high-fidelity VR simulation, integrating Blender with Unreal Engine to enable seamless asset management and high-performance dynamic object manipulation.
+• Designed and implemented a custom XML parser to automate object and joint imports, ensuring seamless ROS integration.
+• Engineered a scalable data pipeline to log and structure object interactions, enhancing robotic arm training datasets.
+• Automated the conversion of real-world objects into 3D models, streamlining asset generation for interactive VR environments." 
+        badges="C++|Python|Unreal Engine|ROS"  color_to={color_to}></Timeline>
        
        
         <Timeline time="Oct 2022 - Apr 2023" title="Software Engineering Intern" subhead="Yubi (Unicorn Startup), Supply Chain Finance Team"  
-          info="•Played a key role in the Integrations Team within the Supply Chain Finance team as a backend developer, specializing in
-                  seamlessly integrating 4 different client APIs with SCF's API using Ruby on Rails, Postgres, AWS, and Redis.
-                •Increased productivity with Forest Admin Automation, achieving 3x faster results. Streamlined manual ticket processes and
-                client data management, leveraging the flexibility of integrating Ruby on Rails with Forest Admin.
-                •Ensured security and data integrity by implementing robust encryption and decryption functionalities for 10 bank API calls,
-                significantly enhancing the overall security measures of the system.
-                •Utilized Redis to streamline and optimize database calls, achieving a 7% improvement in overall system efficiency and a 5%
-                enhancement in response times.
-                •Completed 300 plus tickets in six months, positioning the SCF team as a top performer in innovative solution delivery, by actively
-                contributing to the development of Supply Chain Finance logic. Additionally, integrated 2 new banks into SCF." 
-          color_to={color_to} href="https://drive.google.com/file/d/1EmmtCimns3LCd5AfSKGvqCkfdQnQE3sU/view?usp=drive_link" badges="Ruby on Rails|AWS|Postgresql|Redis"></Timeline>
+          info="• Developed client APIs with Ruby on Rails, PostgreSQL & AWS SNS/SQS (Pub-Sub) to connect 4 systems to SCF's API, boosting integration capabilities & robust async messaging.
+• Enhanced data security by implementing robust AES encryption & decryption for API communications with 10 banking partners, ensuring data integrity.
+• Managed automated deployment pipelines (Jenkins, GitHub Actions) for Ruby on Rails applications on AWS, deploying and maintaining client-facing APIs on AWS API Gateway for high availability and scalability.
+• Boosted system performance by utilizing Redis for database call optimization, resulting in a 7% efficiency gain and 5% faster response times.
+• Accelerated internal workflows by automating manual ticketing processes and client data management through Forest Admin, resulting in a 3x improvement in operational speed." 
+          color_to={color_to} href="https://drive.google.com/file/d/1EmmtCimns3LCd5AfSKGvqCkfdQnQE3sU/view?usp=drive_link" badges="Ruby on Rails|AWS|Postgresql|Redis|AES|Jenkins|GitHub Actions|API Gateway|Forest Admin"></Timeline>
        
         <Timeline time="Apr 2022 - Oct 2022" title="Backend Engineer Intern" subhead="Sabudh Foundation (Remote), Depression Detection Online"  
-          info=" •Developed an online Depression Detection platform using Python, Flask framework, Flask Blueprints library, Postgres, and
- Psycopg2 library.
- •Designed 20 database tables, including schema for authentication, authorization, patient details, hospitals, doctors, and
- appointments, ensuring a robust foundation for the project.
- •Orchestrated the creation of a user API tailored for doctors, patients, administrators, and other user types, ensuring a customized
- experience for over 3 user categories.
- •Streamlined and integrated a machine learning algorithm into the backend, revolutionizing the platform's diagnostic capabilities
- by analyzing patient videos for signs of depression, resulting in more than 90% accuracy and enhanced treatment outcomes." 
-          color_to={color_to} href="https://drive.google.com/file/d/12av2jEpPFQn4AKhOTNdLE2v5CgeVtOYA/view?usp=drive_link" badges="Flask|ML|SQL|Docker|GitLab"></Timeline>
+          info=" • Developed a scalable, high-performance online Depression Detection platform, leveraging Python, Flask, Flask Blueprints, OpenCV, NumPy, PostgreSQL, and Psycopg2, optimizing data processing and real-time analysis for enhanced efficiency.
+• Designed and implemented a highly structured database architecture with 20+ relational tables, incorporating role-based access control (RBAC) for authentication and authorization, ensuring seamless multi-user interactions across multiple roles.
+• Integrated a machine learning pipeline into the backend, leveraging TensorFlow and OpenCV, achieving 90%+ diagnostic accuracy, improving automated depression detection efficiency by 40%, and enhancing treatment outcome predictions.
+• Deployed the platform on AWS, utilizing Docker, Kubernetes, and CI/CD pipelines (Jenkins, GitHub Actions) to enable automated testing, seamless updates, and zero-downtime deployments, improving release cycles by 50%.
+• Implemented advanced logging and monitoring with Prometheus and Grafana, ensuring real-time system observability and reducing incident response time by 35%." 
+          color_to={color_to} href="https://drive.google.com/file/d/12av2jEpPFQn4AKhOTNdLE2v5CgeVtOYA/view?usp=drive_link" badges="Flask|ML|TensorFlow|OpenCV|PostgreSQL|Docker|Kubernetes|Jenkins|Prometheus|Grafana|GitLab"></Timeline>
 
 
 
