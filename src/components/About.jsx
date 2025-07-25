@@ -101,7 +101,7 @@ function About()
 
 
         <div className="flex flex-col self-start mt-28">
-          <a href={"mailto:grpnpraveen@gmail.com"} target='blank'>
+          <a href={"mailto:ravipraveen.gali@gmail.com"} target='blank'>
             <div className="flex flex-col rounded-[10px] bg-orange-600 text-2xl">
               <div className="flex flex-row font-bold text-black p-2">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="size-10">

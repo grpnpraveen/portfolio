@@ -10,14 +10,14 @@ function Skills()
 
       <div className="flex flex-col pl-20">
         <Timeline time="" title="Technical Skills" 
-        info="•Programming Languages: Python, C++, C, Java, SQL
+        info="•Programming Languages: Python, C++, C, C#, Ruby, Kotlin, Java, SQL
         
               •Web Development: HTML/CSS, Java Script, Django, Flask, React, NodeJS
               •Software Engineering: Git, Unit Testing, 
               •Data Structures and Algorithms 
-              •Databases: MySQL, PostgreSQL, MongoDB, Redis
+              •Databases: MySQL, PostgreSQL, MongoDB, Redis, DynamoDB
               •Networking: REST, Encryption, HTTP/HTTPS, DNS
-              •Cloud Computing: AWS,EC2, S3, Lambda, Docker
+              •Cloud Computing: AWS,EC2, S3, Lambda, Docker, Kubernetes
               •Machine Learning and Data Science: TensorFlow, PyTorch, Scikit-Learn, Pandas, NumPy, Matplotlib, Seaborn, Regression, Classification, Clustering, Neural Networks
               
         

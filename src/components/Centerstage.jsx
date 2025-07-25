@@ -82,7 +82,7 @@ function Centerstage(props)
         {/* Detail */}
         <div className="flex flex-col space-y-4">
 
-          <Infocard title='EMAIL' info='grpnpraveen@gmail.com' href="mailto:grpnpraveen@gmail.com">
+          <Infocard title='EMAIL' info='ravipraveen.gali@gmail.com' href="mailto:ravipraveen.gali@gmail.com">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"  stroke="currentColor" className="size-7 items-center justify-center">
               <path d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
             </svg>
@@ -121,7 +121,7 @@ function Centerstage(props)
           </Media>
 
           <Tooltip text="Mail Me">
-            <Media href='mailto:grpnpraveen@gmail.com'>
+            <Media href='mailto:ravipraveen.gali@gmail.com'>
               <img draggable="false"  src={mail_me}></img>
             </Media>
         </Tooltip>
@@ -149,7 +149,7 @@ function Centerstage(props)
     <div className='flex flex-col z-10'>
      
         <div className="bubble2 size-28 hover:bg-red-400/65 rounded-full text_custom">
-        <a href='mailto:grpnpraveen@gmail.com'  target='blank' className='absolute w-[100%] h-[100%]'>   </a>
+        <a href='mailto:ravipraveen.gali@gmail.com'  target='blank' className='absolute w-[100%] h-[100%]'>   </a>
           <p>&lt;Mail Me/&gt;</p>
         </div>
    
