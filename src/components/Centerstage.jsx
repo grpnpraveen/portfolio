@@ -94,7 +94,7 @@ function Centerstage(props)
             </svg>
           </Infocard>
 
-          <Infocard title='LOCATION' info='Stony Brook, New York' href='https://maps.app.goo.gl/mz2cDRsUV8bsft9M7'>
+          <Infocard title='LOCATION' info='USA [Open to Relocation]' href='https://www.google.com/maps/place/United+States/@36.0548948,-161.6046902,12752248m/data=!3m2!1e3!4b1!4m6!3m5!1s0x54eab584e432360b:0x1c3bb99243deb742!8m2!3d38.7945952!4d-106.5348379!16zL20vMDljN3cw?entry=ttu&g_ep=EgoyMDI1MTAwOC4wIKXMDSoASAFQAw%3D%3D'>
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"  stroke="currentColor" className="size-7 items-center justify-center">
               <path d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
               <path d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" />
