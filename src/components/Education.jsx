@@ -1,10 +1,15 @@
 import Transition from "./Transition";
 import Timeline from "./Timeline";
-
+import React from "react";
 function Education()
 {
 
    const color_to = "text-orange-500"
+     React.useEffect(() => {
+    if (window.umami) {
+      window.umami.track('Education Page Loaded');
+    }
+  }, []);
 
     return(
       <>

@@ -1,9 +1,14 @@
 import Transition from "./Transition";
 import { motion } from "framer-motion";
-
+import React from "react";
 
 function About()
 {
+    React.useEffect(() => {
+    if (window.umami) {
+      window.umami.track('About Page Loaded');
+    }
+  }, []);
  
     return(
       <>

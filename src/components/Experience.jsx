@@ -1,11 +1,15 @@
 import Transition from "./Transition";
 import Timeline from "./Timeline";
-
+import React from "react";
 function Experience()
 {
  
   const color_to = "text-yellow-500"
-  
+      React.useEffect(() => {
+    if (window.umami) {
+      window.umami.track('Experience Page Loaded');
+    }
+  }, []);
     return(
       <>
       <Transition text_color_to='text-yellow-500' bg_color_to='bg-yellow-500' heading='Experience' star_color_to="rgb(234, 179, 8,">

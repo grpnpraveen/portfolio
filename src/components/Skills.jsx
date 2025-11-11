@@ -1,9 +1,14 @@
 import Transition from "./Transition";
 import Timeline from "./Timeline";
-
+import React from "react";
 function Skills()
 {
    const color_to = "text-teal-500"
+     React.useEffect(() => {
+    if (window.umami) {
+      window.umami.track('Skills Page Loaded');
+    }
+  }, []);
     return(
       <>
       <Transition text_color_to='text-teal-500' bg_color_to='bg-teal-500' heading='Skills' star_color_to='rgb(20, 184, 20'>

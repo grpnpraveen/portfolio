@@ -1,8 +1,14 @@
 import '../App.css'
 import StarCanvas from './Star';
 import Centerstage from './Centerstage'
+import React from 'react';
 function Home()
 {
+       React.useEffect(() => {
+    if (window.umami) {
+      window.umami.track('Home Page Loaded');
+    }
+  }, []);
     return (
             <>
             

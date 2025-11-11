@@ -1,11 +1,16 @@
 import { useEffect, useState} from 'react';
 import Transition from "./Transition";
 import Projectcard from "./Project_card";
-
+import React from "react";
 
 
 function Projects()
 {
+    React.useEffect(() => {
+    if (window.umami) {
+      window.umami.track('Projects Page Loaded');
+    }
+  }, []);
     const [fileContent, setFileContent] = useState('');
     useEffect(() => {
         // Path to the file in the public directory
