@@ -17,7 +17,7 @@ function Experience()
 
          <div className="flex flex-col pl-20">
 
-        <Timeline time="Jan 2024 - Dec 2024" title="Graduate Research Assistant" subhead="Prof I.V. Ramakrishnan, Stony Brook University" 
+        <Timeline time="Jan 2024 - Dec 2024" title="Backend Engineer" subhead="Prof I.V. Ramakrishnan, Stony Brook University" 
         info="•Architected backend systems for a high-fidelity VR simulation, integrating Blender with Unreal Engine to enable seamless asset management and high-performance dynamic object manipulation.
 • Designed and implemented a custom XML parser to automate object and joint imports, ensuring seamless ROS integration.
 • Engineered a scalable data pipeline to log and structure object interactions, enhancing robotic arm training datasets.
@@ -25,7 +25,7 @@ function Experience()
         badges="C++|Python|Unreal Engine|ROS"  color_to={color_to}></Timeline>
        
        
-        <Timeline time="Oct 2022 - Apr 2023" title="Software Engineering Intern" subhead="Yubi (Unicorn Startup), Supply Chain Finance Team"  
+        <Timeline time="Oct 2022 - Apr 2023" title="Software Engineering" subhead="Yubi (Unicorn Startup), Supply Chain Finance Team"  
           info="• Developed client APIs with Ruby on Rails, PostgreSQL & AWS SNS/SQS (Pub-Sub) to connect 4 systems to SCF's API, boosting integration capabilities & robust async messaging.
 • Enhanced data security by implementing robust AES encryption & decryption for API communications with 10 banking partners, ensuring data integrity.
 • Managed automated deployment pipelines (Jenkins, GitHub Actions) for Ruby on Rails applications on AWS, deploying and maintaining client-facing APIs on AWS API Gateway for high availability and scalability.
@@ -33,7 +33,7 @@ function Experience()
 • Accelerated internal workflows by automating manual ticketing processes and client data management through Forest Admin, resulting in a 3x improvement in operational speed." 
           color_to={color_to} href="https://drive.google.com/file/d/1EmmtCimns3LCd5AfSKGvqCkfdQnQE3sU/view?usp=drive_link" badges="Ruby on Rails|AWS|Postgresql|Redis|AES|Jenkins|GitHub Actions|API Gateway|Forest Admin"></Timeline>
        
-        <Timeline time="Apr 2022 - Oct 2022" title="Backend Engineer Intern" subhead="Sabudh Foundation (Remote), Depression Detection Online"  
+        <Timeline time="Apr 2022 - Oct 2022" title="Backend Engineer" subhead="Sabudh Foundation (Remote), Depression Detection Online"  
           info=" • Developed a scalable, high-performance online Depression Detection platform, leveraging Python, Flask, Flask Blueprints, OpenCV, NumPy, PostgreSQL, and Psycopg2, optimizing data processing and real-time analysis for enhanced efficiency.
 • Designed and implemented a highly structured database architecture with 20+ relational tables, incorporating role-based access control (RBAC) for authentication and authorization, ensuring seamless multi-user interactions across multiple roles.
 • Integrated a machine learning pipeline into the backend, leveraging TensorFlow and OpenCV, achieving 90%+ diagnostic accuracy, improving automated depression detection efficiency by 40%, and enhancing treatment outcome predictions.
