@@ -31,8 +31,10 @@ function Experience()
 • Managed automated deployment pipelines (Jenkins, GitHub Actions) for Ruby on Rails applications on AWS, deploying and maintaining client-facing APIs on AWS API Gateway for high availability and scalability.
 • Boosted system performance by utilizing Redis for database call optimization, resulting in a 7% efficiency gain and 5% faster response times.
 • Accelerated internal workflows by automating manual ticketing processes and client data management through Forest Admin, resulting in a 3x improvement in operational speed." 
-          color_to={color_to} href="https://drive.google.com/file/d/1EmmtCimns3LCd5AfSKGvqCkfdQnQE3sU/view?usp=drive_link" badges="Ruby on Rails|AWS|Postgresql|Redis|AES|Jenkins|GitHub Actions|API Gateway|Forest Admin"></Timeline>
-       
+          color_to={color_to} badges="Ruby on Rails|AWS|Postgresql|Redis|AES|Jenkins|GitHub Actions|API Gateway|Forest Admin"></Timeline>
+       {/* href="https://drive.google.com/file/d/1EmmtCimns3LCd5AfSKGvqCkfdQnQE3sU/view?usp=drive_link" */}
+
+
         <Timeline time="Apr 2022 - Oct 2022" title="Backend Engineer" subhead="Sabudh Foundation (Remote), Depression Detection Online"  
           info=" • Developed a scalable, high-performance online Depression Detection platform, leveraging Python, Flask, Flask Blueprints, OpenCV, NumPy, PostgreSQL, and Psycopg2, optimizing data processing and real-time analysis for enhanced efficiency.
 • Designed and implemented a highly structured database architecture with 20+ relational tables, incorporating role-based access control (RBAC) for authentication and authorization, ensuring seamless multi-user interactions across multiple roles.
