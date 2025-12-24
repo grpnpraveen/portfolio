@@ -34,7 +34,7 @@ function Centerstage(props)
              
                 <div className="bubble bubble3 size-28 rounded-full text_custom hover:bg-orange-400/65 text_custom">
                 <Link to="/about" className='absolute w-[100%] h-[100%]'> </Link>
-                  <p>&lt;WhoamI/&gt;</p>
+                  <p>&lt;WhoAmI/&gt;</p>
                   
                 </div>
              

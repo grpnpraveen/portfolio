@@ -26,7 +26,7 @@ https://github.com/grpnpraveen/GlobalWeatherData_Visualization
 *
 
 ./moviereco.png|
-Movie Recommender BasedOn Content & ContentCreators|
+Movie Recommender Based on Content & ContentCreators|
 This project recommends movies similar to a user's favorite by leveraging knowledge graphs and natural language processing to analyze content, genres, and creators, providing tailored suggestions based on plot, genre, directors, and writers.|
 https://github.com/grpnpraveen/Movie-Recommender-BasedOn-Content-and-ContentCreators
 
@@ -67,7 +67,7 @@ https://github.com/grpnpraveen/VidStream
 
 ./gshadow.jpg|
 PBR Perfect|
-Created an addon for blender whicu  streamlines PBR material creation by automatically mapping to respective texture maps|
+Created an addon for blender which streamlines PBR material creation by automatically mapping to respective texture maps|
 https://github.com/grpnpraveen/PBR_Perfect-Add-on
 
 
