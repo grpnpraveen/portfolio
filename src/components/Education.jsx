@@ -18,7 +18,7 @@ function Education()
 
       <div className="flex flex-col pl-20">
 
-            <Timeline time="Aug 2023 - Present" title="Masters in Computer Science" subhead="Stony Brook University, New York" info="•Course Work:"  badges="Computer Vision|Network Security|Visualization|Machine Learning" color_to={color_to}></Timeline>
+            <Timeline time="Aug 2023 - May 2025" title="Masters in Computer Science" subhead="Stony Brook University, New York" info="•Course Work:"  badges="Computer Vision|Network Security|Visualization|Machine Learning" color_to={color_to}></Timeline>
 
 
 

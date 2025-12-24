@@ -74,7 +74,7 @@ function Centerstage(props)
 
           <h2 className="font-semibold from-neutral-50 text-2xl mt-4">Ravi Praveen Gali</h2>
           <div className="flex flex-col items-center justify-center text-center rounded-md bg-slate-700 w-40 mt-3 p-1">
-            Grad Student@SBU
+            Gradduated @SBU
           </div>
 
           <hr className="flex self-center mt-6 h-px my-8 bg-gray-200 border-0 dark:bg-zinc-400 size-52"></hr>
