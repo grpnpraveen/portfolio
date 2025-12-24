@@ -163,10 +163,13 @@ function StarCanvas({color_to}) {
     scale = window.devicePixelRatio || 1;
 
     width = window.innerWidth * scale;
-    height = window.innerHeight * scale;
+    height = Math.max(window.innerHeight, document.documentElement.scrollHeight) * scale;
 
     canvas.width = width;
     canvas.height = height;
+
+    canvas.style.width = window.innerWidth + 'px';
+    canvas.style.height = Math.max(window.innerHeight, document.documentElement.scrollHeight) + 'px';
 
     stars.forEach(placeStar);
   };
@@ -193,6 +196,9 @@ function StarCanvas({color_to}) {
     resize(canvas);
     step();
 
+    // Resize again after a short delay to account for dynamic content loading
+    setTimeout(() => resize(canvas), 100);
+
   });
 
   return (<canvas className="star-canvas" ref={starCanvasRef}
@@ -200,8 +206,6 @@ function StarCanvas({color_to}) {
       position: "fixed",
       top: 0,
       left: 0,
-      width: "100%",
-      height: "100%",
       zIndex: -1,
     }}
   >
