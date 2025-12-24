@@ -47,7 +47,7 @@ function About()
       <div className="text-left text-xl w-[60%]">
       These experiences have not only sharpened my technical skills but also fostered a mindset of creative problem-solving, and in my free time, I enjoy creating 3D models and spending time in Blender.
       {/* <br></br> */}
-       As I continued my academic journey at Stony Brook University, I look forward to further deepening my knowledge in computer science. I am excited about the opportunities to collaborate with brilliant minds and contribute to cutting-edge research in the field.
+      <span></span>As I continued my academic journey at Stony Brook University, I looked forward to further deepening my knowledge in computer science. I was excited about the opportunities to collaborate with brilliant minds and contribute to cutting-edge research in the field as I completed my studies.
       </div>
 
 
