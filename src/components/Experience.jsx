@@ -24,7 +24,7 @@ function Experience()
 security workflow automation.
 •Gaining hands-on experience with data center networking (BGP-EVPN fabrics, ACLs, QoS) and telemetry ingestion to support
 scalable operational tooling. " 
-        badges="PyAts|L2,L3 TCP/IP|Nexus 9k Switches"  color_to={color_to}></Timeline>
+        badges="PyAts|L2,L3 TCP/IP|Nexus 9k Datacenter Switches"  color_to={color_to}></Timeline>
 
 
 
