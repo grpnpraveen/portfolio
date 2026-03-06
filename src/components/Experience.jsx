@@ -20,7 +20,7 @@ function Experience()
 
 
         <Timeline time="FEB 2026 - Present" title="Software Engineer 2" subhead="Cisco" 
-        info="•Contributing to Python-based automation for Cisco Nexus 9000 switches, supporting configuration validation, provisioning, and
+        info="•Contributing to Python-based automation for Cisco Nexus 9000 series switches, supporting configuration validation, provisioning, and
 security workflow automation.
 •Gaining hands-on experience with data center networking (BGP-EVPN fabrics, ACLs, QoS) and telemetry ingestion to support
 scalable operational tooling. " 
