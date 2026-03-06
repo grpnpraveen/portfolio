@@ -17,6 +17,19 @@ function Experience()
 
          <div className="flex flex-col pl-20">
 
+
+
+        <Timeline time="FEB 2026 - Present" title="Software Engineer 2" subhead="Cisco" 
+        info="•Contributing to Python-based automation for Cisco Nexus 9000 switches, supporting configuration validation, provisioning, and
+security workflow automation.
+•Gaining hands-on experience with data center networking (BGP-EVPN fabrics, ACLs, QoS) and telemetry ingestion to support
+scalable operational tooling. " 
+        badges="PyAts|L2,L3 TCP/IP|Nexus 9k Switches"  color_to={color_to}></Timeline>
+
+
+
+
+
         <Timeline time="Jan 2024 - Dec 2024" title="Backend Engineer" subhead="Prof I.V. Ramakrishnan, Stony Brook University" 
         info="•Architected backend systems for a high-fidelity VR simulation, integrating Blender with Unreal Engine to enable seamless asset management and high-performance dynamic object manipulation.
 • Designed and implemented a custom XML parser to automate object and joint imports, ensuring seamless ROS integration.
