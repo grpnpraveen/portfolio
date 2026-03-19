@@ -73,8 +73,11 @@ function Centerstage(props)
           </div>
 
           <h2 className="font-semibold from-neutral-50 text-2xl mt-4">Ravi Praveen Gali</h2>
-          <div className="flex flex-col items-center justify-center text-center rounded-md bg-slate-700 w-40 mt-3 p-1">
-            Graduated @SBU
+          <div className="flex flex-col items-center justify-center text-center mt-3">
+            <div className="rounded-md bg-slate-700 w-48 p-1 mb-2 whitespace-nowrap">
+             SDE2 @Cisco | MS @SBU
+            </div>
+      
           </div>
 
           <hr className="flex self-center mt-6 h-px my-8 bg-gray-200 border-0 dark:bg-zinc-400 size-52"></hr>
@@ -94,7 +97,7 @@ function Centerstage(props)
             </svg>
           </Infocard>
 
-          <Infocard title='LOCATION' info='USA [Open to Relocation]' href='https://www.google.com/maps/place/United+States/@36.0548948,-161.6046902,12752248m/data=!3m2!1e3!4b1!4m6!3m5!1s0x54eab584e432360b:0x1c3bb99243deb742!8m2!3d38.7945952!4d-106.5348379!16zL20vMDljN3cw?entry=ttu&g_ep=EgoyMDI1MTAwOC4wIKXMDSoASAFQAw%3D%3D'>
+          <Infocard title='LOCATION' info='San Jose [Open to Relocation]' href='https://www.google.com/maps/place/United+States/@36.0548948,-161.6046902,12752248m/data=!3m2!1e3!4b1!4m6!3m5!1s0x54eab584e432360b:0x1c3bb99243deb742!8m2!3d38.7945952!4d-106.5348379!16zL20vMDljN3cw?entry=ttu&g_ep=EgoyMDI1MTAwOC4wIKXMDSoASAFQAw%3D%3D'>
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"  stroke="currentColor" className="size-7 items-center justify-center">
               <path d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
               <path d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" />
@@ -156,7 +159,7 @@ function Centerstage(props)
 
      
           <div className="bubble size-36 mt-44 hover:bg-green-400/65 rounded-full text_custom">
-          <Link to="https://drive.google.com/file/d/1N8Mn-0k7zYWphZH-hnwY8319WSsYKJrp/view?usp=drive_link" target='_blank' className='absolute w-[100%] h-[100%]' onClick={() => {
+          <Link to="https://drive.google.com/file/d/1bMTmB_oPEylOxFQSAkJJd7mVNhRQn6Jl/view?usp=sharing" target='_blank' className='absolute w-[100%] h-[100%]' onClick={() => {
       if (window.umami) {
         window.umami.track('Resume Link Clicked');
       }
